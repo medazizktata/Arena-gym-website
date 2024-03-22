@@ -36,4 +36,3 @@ npm run dev # Start the development server
 ## 💡 Tips and Tricks
 
 - Customize your project's code style by editing the `.prettierrc` file and then running `npm run format`.
-- Split your frontend and backend console output by running `npm run frontend` and `npm run backend` in separate terminals.
