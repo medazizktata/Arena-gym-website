@@ -1,3 +1,5 @@
+## 📦 Arena Gym Website
+
 Project Installation Documentation
 
 This documentation will guide you through the process of setting up the project locally on your machine. The project is built with React using Vite as the bundler, and npm as the package manager.
