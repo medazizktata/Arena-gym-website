@@ -1,4 +1,4 @@
-## 📦 Arena Gym Website
+## Arena Gym Website | React x Vite x Django
 
 Project Installation Documentation
 
