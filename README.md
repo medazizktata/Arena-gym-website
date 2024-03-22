@@ -1,51 +1,28 @@
-Project Installation Documentation
+## 📦 Create a New Project
 
-This documentation will guide you through the process of setting up the project locally on your machine. The project is built with React using Vite as the bundler, and npm as the package manager.
+Make sure that [Node.js](https://nodejs.org/en/) `>= 21` is installed on your system.
 
-Prerequisites:
+Run the following commands in a new, empty project directory:
 
-Node.js and npm should be installed on your machine. You can download and install them from here.
-Git should be installed on your machine. You can download and install it from here.
-Step 1: Clone the Repository
-
-Open your terminal or command prompt.
-Navigate to the directory where you want to clone the repository.
-Run the following command:
-
+```sh
 git clone <repository-url>
-Replace <repository-url> with the actual URL of the repository.
-
-Step 2: Install Dependencies
-
-Navigate into the project directory using the terminal.
-
 cd <project-directory>
-Replace <project-directory> with the name of the directory where you cloned the repository.
-
-Once inside the project directory, install the required dependencies by running the following command:
-
 npm install
+npm run dev # Start the development server
+```
 
-Step 3: Start the Development Server
+## 🛠️ Technology Stack
 
-After installing the dependencies, you can start the development server by running the following command:
+- [Vite](https://vitejs.dev/): high-performance tooling for front-end web development
+- [React](https://reactjs.org/): a component-based UI library
+- [Prettier](https://prettier.io/): code formatting for a wide range of supported languages
 
-npm run dev
+## 📚 Documentation
 
-This command will start the development server and open the project in your default web browser. If it doesn't open automatically, you can visit http://localhost:3000 in your browser to view the project.
+- [Vite developer docs](https://vitejs.dev/guide/)
+- [React quick start guide](https://react.dev/learn)
 
-Step 4: Additional Commands
+## 💡 Tips and Tricks
 
-npm run build: Builds the project for production.
-npm run serve: Serves the production build locally for testing.
-
-Step 5: Project Structure
-
-src/: Contains the source code of the project.
-public/: Contains static assets and the HTML template.
-node_modules/: Contains the dependencies installed via npm.
-package.json: Contains metadata and dependencies configuration.
-vite.config.js: Contains Vite configuration settings.
-Troubleshooting:
-
-If you encounter any issues during installation or running the project, please refer to the project's documentation or contact the project maintainer for assistance.
+- Customize your project's code style by editing the `.prettierrc` file and then running `npm run format`.
+- Split your frontend and backend console output by running `npm run frontend` and `npm run backend` in separate terminals.
