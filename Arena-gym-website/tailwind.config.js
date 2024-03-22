@@ -8,7 +8,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        'robotoCon': ['Roboto Condensed', 'Roboto', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+        'montserrat':['Montserrat', 'sans-serif'],
+        'mosk': ['Mosk', 'sans-serif'],
+        Gentona: ['Gentona', 'sans-serif'],
+        'urbanist': ['Urbanist', 'sans-serif'],        
       },
     },
   },
