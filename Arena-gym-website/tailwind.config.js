@@ -24,11 +24,17 @@ export default {
         yellowDarkShadow: '#3D3500',
         yellowLightShadow: '#827200',
        greyLight: "#D9D9D9",
+       greyMedium: "#7F7F7F",
+       greyDark: "#232323",
 
       },
       boxShadow: theme => ({
-        'buttonYellow': `0 3px 0 0 ${theme('colors.yellowDarkShadow')}`,
+        'buttonYellowDark': `0 3px 0 0 ${theme('colors.yellowDarkShadow')}`,
+        'buttonYellowLight': `0 3px 0 0 ${theme('colors.yellowLightShadow')}`,
         'buttonWhite': `0 3px 0 0 ${theme('colors.white')}`,
+        'buttonGreyLight': `0 3px 0 0 ${theme('colors.greyLight')}`,
+        'buttonGreyMedium': `0 3px 0 0 ${theme('colors.greyMedium')}`,
+        'buttonGreyDark': `0 3px 0 0 ${theme('colors.greyDark')}`,
       }),
     },
   },
