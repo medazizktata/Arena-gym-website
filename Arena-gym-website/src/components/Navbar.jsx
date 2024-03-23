@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ImageHover from "./ImageHover";
 import ButtonYellow from "./Buttons/ButtonYellow";
 import ButtonBlack from "./Buttons/ButtonBlack";
+import Arrow from "./Arrow";
 
 function Navbar() {
   return (

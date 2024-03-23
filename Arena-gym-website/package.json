@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@obelism/react-svg": "^2.0.2",
     "axios": "^1.6.8",
+    "external-svg-loader": "^1.7.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typings": "^2.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
