@@ -1,13 +1,10 @@
 import React from 'react';
 import FontTesting from './fontTesting.jsx';
-import Navbar from './components/Navbar.jsx';
-
+import Home from './pages/Home/Home.jsx';
 
 function App() {
   return (
-    <div className="bg-blackBG">
-      <Navbar />
-    </div>
+    <Home/>
   );
 }
 
