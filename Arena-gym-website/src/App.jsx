@@ -3,7 +3,8 @@ import FontTesting from './fontTesting.jsx';
 
 function App() {
   return (
-    <div>
+    <div>Hi This is Test App
+    <FontTesting/>
     </div>
   );
 }
