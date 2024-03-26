@@ -2,3 +2,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+/*  test  */
+
+@layer components {
+    .outer-box {
+        @apply relative;
+        border: none;
+        padding: 0px; /* Cette valeur peut être ajustée pour obtenir l'effet de décalage désiré */
+        gap: 1.6rem;
+      }
+    
+      .trap-left {
+        @apply p-7 relative bg-white z-10;
+        clip-path: polygon(0 0, calc(100% - 2.5rem) 0, 100% 100%, 0 100%);
+        border: 2px solid yellow;
+      }
+    
+      .trap-right {
+        @apply relative z-0;
+        clip-path: polygon(2.5rem 0, 100% 0, 100% 100%, 0 100%);
+        background: black;
+        border: 2px solid yellow;
+      }
+    
+      .inner-left-border {
+        @apply absolute top-0 left-0 z-0;
+        border-left: 2px solid yellow;
+        border-right: #3D3500;
+        border-bottom: 2px solid #3D3500;
+        height: 100%;
+        transform: translate(-2px, 3px);
+      }
+    
+      .inner-right-border {
+        @apply absolute top-0 right-0 z-30;
+        border-right: 2px solid yellow;
+        border-bottom: 2px solid yellow;
+        height: 100%;
+        transform: translate(2px, 2px);
+      }
+  }
