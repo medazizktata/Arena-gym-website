@@ -1,5 +1,4 @@
 import React from "react";
-import { SvgProvider, Svg } from "./svgConfig";
 function Arrow() {
   return (
     <div>
