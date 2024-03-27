@@ -65,17 +65,17 @@ function Home() {
       >
         <polygon points="0,0 100,0 50,100" fill={getColor("yellowMain")} />
       </svg>
-      <div className="text-white text-4xl font-urbanist font-bold inline mx-[20%] my-[5%] bg-blackBG bottom-0 flex flex-col gap-14">
-        <div className="flex flex-row justify-between">
+      <div className="text-white text-4xl font-urbanist font-bold inline mx-[20%] my-[5%] bg-blackBG bottom-0 flex flex-row justify-between">
+        <div className="flex flex-col gap-16">
           <span>Fitness Classes</span>
           <span>Personal Training</span>
         </div>
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-col justify-between">
           <span>Premium Equipment</span>
           <span>Quality Coaches</span>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center text-lg">
         <ButtonYellow
           buttonFont="font-robotoCon"
           fontWeight="font-black"
