@@ -6,9 +6,6 @@ function Home() {
   return (
     <div>
       <Navbar />
-      <Arrow />
-
-
     </div>
   );
 }
