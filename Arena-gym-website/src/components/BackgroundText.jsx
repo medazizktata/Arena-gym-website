@@ -7,7 +7,7 @@ const BackgroundText = ({ text, fontFamily, strokeColor, textSize }) => {
       <svg viewBox="0 0 100 100" className="w-full">
         <text
           x="50%"
-          y="50%"
+          y="15%"
           dominantBaseline="middle"
           textAnchor="middle"
           fill="none"

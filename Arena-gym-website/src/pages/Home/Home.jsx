@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import BackgroundText from "../../components/BackgroundText";
 import HeroSection from "./HeroSection";
+import ActivitiesSection from "./ActivitiesSection";
 
 function Home() {
   return (
     <>
       <Navbar />
-      <HeroSection/>
+      <HeroSection />
+      <ActivitiesSection/>
     </>
   );
 }
