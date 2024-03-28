@@ -37,6 +37,10 @@ export default {
         'cardYellowDark': `5px 5px 0 ${theme('colors.yellowDarkShadow')}`,
         'cardYellowLight': `5px 5px 0 ${theme('colors.yellowLightShadow')}`,
         'cardWhite': `5px 5px 0 ${theme('colors.white')}`,
+        'cardGreyMedium': `5px 5px 0 ${theme('colors.greyMedium')}`,
+        'cardGreyDark': `5px 5px 0 ${theme('colors.greyDark')}`,
+        'cardGreyLight': `5px 5px 0 ${theme('colors.greyLight')}`,
+        'cardYellowMain': `5px 5px 0 ${theme('colors.yellowMain')}`,
 
       }),
       backgroundImage:{
