@@ -87,7 +87,7 @@ function Navbar() {
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
               </a>
             </>
-            <ButtonYellow buttonFont="font-robotoCon" fontWeight="font-black" paddingX={6}>Join Us</ButtonYellow>
+            <ButtonYellow buttonFont="font-robotoCon" fontWeight="font-black" paddingX={8}>Join Us</ButtonYellow>
           </div>
         </div>
       </div>
