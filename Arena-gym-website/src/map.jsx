@@ -3,7 +3,7 @@ import '@fontsource/urbanist'; // Assurez-vous d'avoir importé la police
 
 const MapCard = ({ title, subtitle, url }) => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-800 px-4 font-urbanist">
+    <div className="flex flex-col items-center justify-center min-h-screen  px-4 font-urbanist">
       <div className="text-center mb-8 w-1/3  ">
         <h1 className="text-4xl font-bold text-white py-2">{title}</h1>
         <p className="text-gray-300 ">{subtitle}</p>

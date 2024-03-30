@@ -24,7 +24,7 @@
 
   const SplitRectangle = ({ text_grand, text, imageUrl }) => {
     return (
-      <div className="mx-auto max-w-4xl px-4 py-9">
+      <div className="mx-auto max-w-4xl px-4 py-9 text-white">
         <div className="flex">
           <div className="text-part flex-1 p-4" 
                style={{
