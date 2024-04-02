@@ -5,16 +5,18 @@ import ActivitiesSection from "./ActivitiesSection";
 import CoachesSection from "./CoachesSection";
 import About from "../About/About";
 import AppSection from "./AppSection";
+import BelowFooter from "../../components/BelowFooter";
 
 function Home() {
   return (
     <>
-       <Navbar />
+       {/* <Navbar />
       <HeroSection />
       <ActivitiesSection/>
-      <CoachesSection/> 
+      <CoachesSection/>  */}
       <AppSection/>
       {/*<About/>*/}
+      <BelowFooter/>
     </>
   );
 }
