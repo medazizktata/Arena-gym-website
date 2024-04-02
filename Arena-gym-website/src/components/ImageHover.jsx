@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-function ImageHover({ originalSrc, hoverSrc }) {
+function ImageHover({ originalSrc, hoverSrc, className }) {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -13,6 +13,7 @@ function ImageHover({ originalSrc, hoverSrc }) {
 
   return (
     <img
+      className={`hover:cursor-pointer ${className}`}
       src={isHovered ? hoverSrc : originalSrc}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
