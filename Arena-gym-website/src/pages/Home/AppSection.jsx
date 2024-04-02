@@ -30,9 +30,9 @@ function AppSection() {
           src="/src/assets/Logo/Final Logo/White/1x/Padel Premium White.png"
           alt="Logo"
         />
-        <div className="flex flex-col md:flex-row justify-center items-center z-10">
+        <div className="flex flex-col gap-10 md:flex-row justify-center items-center z-10">
           <img
-            className="my-4 w-[65%] md:w-1/3 lg:w-1/3 xl:w-1/4"
+            className="my-4 w-[65%] md:w-1/3 lg:w-1/3 xl:w-1/4 xl:transform xl:scale-90 "
             src="/src/assets/Mockup/Phone1.png"
             alt="Phone1"
           />
