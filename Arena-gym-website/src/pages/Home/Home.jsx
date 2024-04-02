@@ -4,15 +4,17 @@ import HeroSection from "./HeroSection";
 import ActivitiesSection from "./ActivitiesSection";
 import CoachesSection from "./CoachesSection";
 import About from "../About/About";
+import AppSection from "./AppSection";
 
 function Home() {
   return (
     <>
-      {/* <Navbar />
+       <Navbar />
       <HeroSection />
       <ActivitiesSection/>
-      <CoachesSection/> */}
-      <About/>
+      <CoachesSection/> 
+      <AppSection/>
+      {/*<About/>*/}
     </>
   );
 }
