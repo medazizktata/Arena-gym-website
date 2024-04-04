@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
 export default {
   content: [
     "./index.html",
@@ -35,7 +34,18 @@ export default {
         'buttonGreyLight': `0 3px 0 0 ${theme('colors.greyLight')}`,
         'buttonGreyMedium': `0 3px 0 0 ${theme('colors.greyMedium')}`,
         'buttonGreyDark': `0 3px 0 0 ${theme('colors.greyDark')}`,
+        'cardYellowDark': `5px 5px 0 ${theme('colors.yellowDarkShadow')}`,
+        'cardYellowLight': `5px 5px 0 ${theme('colors.yellowLightShadow')}`,
+        'cardWhite': `5px 5px 0 ${theme('colors.white')}`,
+        'cardGreyMedium': `5px 5px 0 ${theme('colors.greyMedium')}`,
+        'cardGreyDark': `5px 5px 0 ${theme('colors.greyDark')}`,
+        'cardGreyLight': `5px 5px 0 ${theme('colors.greyLight')}`,
+        'cardYellowMain': `5px 5px 0 ${theme('colors.yellowMain')}`,
+
       }),
+      backgroundImage:{
+        'mapBackground': "url(src/assets/Images/Choisir Salle/Map_background_image.png)",
+      }
     },
   },
   plugins: [],

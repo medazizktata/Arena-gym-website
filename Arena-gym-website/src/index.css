@@ -2,3 +2,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+    body {
+        background-color: #121212;
+    }
+}
+
+
+@layer components {
+    .outer-box {
+        @apply relative;
+        border: none;
+        padding: 0px; /* Cette valeur peut être ajustée pour obtenir l'effet de décalage désiré */
+        gap: 1.6rem;
+      }
+    
+      .trap-left {
+        @apply p-7 relative bg-white z-10;
+        clip-path: polygon(0 0, calc(100% - 2.5rem) 0, 100% 100%, 0 100%);
+        border: 2px solid yellow;
+      }
+    
+      .trap-right {
+        @apply relative z-0;
+        clip-path: polygon(2.5rem 0, 100% 0, 100% 100%, 0 100%);
+        background: black;
+        border: 2px solid yellow;
+      }
+    
+      .inner-left-border {
+        @apply absolute top-0 left-0 z-0;
+        border-left: 2px solid yellow;
+        border-right: #3D3500;
+        border-bottom: 2px solid #3D3500;
+        height: 100%;
+        transform: translate(-2px, 3px);
+      }
+    
+      .inner-right-border {
+        @apply absolute top-0 right-0 z-30;
+        border-right: 2px solid yellow;
+        border-bottom: 2px solid yellow;
+        height: 100%;
+        transform: translate(2px, 2px);
+      }
+
+      
+        .custom-iframe-border {
+          @apply relative z-0;
+        box-shadow: 5px 5px 7.5px rgba(255, 255, 255, 0.8);
+        position: relative;
+        top: 2px;
+        right: -2px;
+        border: solid  ;
+        }
+      
+        .shadow-yellow {
+          box-shadow:5px 5px 7.5px rgba(255, 210, 12, 0.822);
+           
+        }
+        
+        .shadow-white {
+          border: solid white 0.15rem;
+
+          box-shadow: 4px 5px 3px rgba(255, 255, 255, 0.8);
+        }
+      }
+      
