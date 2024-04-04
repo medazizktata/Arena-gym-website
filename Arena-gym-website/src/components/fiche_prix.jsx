@@ -1,5 +1,4 @@
 import React from 'react';
-import '@fontsource/urbanist'; 
 
 const SubscriptionBox = ({ type, packName, price, duration, items, svgIcon , link }) => {
   const boxStyle = type === 1 ? 'bg-yellowMain relative' : 'bg-blackBG text-white relative';
@@ -18,7 +17,7 @@ const SubscriptionBox = ({ type, packName, price, duration, items, svgIcon , lin
         <>
           <div className="font-bold text-black font-Urbanist text-xs  p-1.5 w-32 text-center  bg-white absolute top-5 -right-1 transform rotate-45 translate-x-1/4 -translate-y-1/10">
             Best Offer
-          </div>
+        </div>
           
         
       <div className="py-3 font-bold text-xl font-Gentona uppercase absolute top-0 left-4">
