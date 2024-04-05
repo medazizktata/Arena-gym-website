@@ -32,17 +32,17 @@ function AppSection() {
         />
         <div className="flex flex-col gap-10 md:flex-row justify-center items-center z-10">
           <img
-            className="my-4 w-[65%] md:w-1/3 lg:w-1/3 xl:w-1/4 xl:transform xl:scale-90 "
+            className="my-4 w-[65%] scale-90 md:w-1/3 lg:w-1/3 xl:w-1/5  "
             src="/src/assets/Mockup/Phone1.png"
             alt="Phone1"
           />
           <img
-            className="my-4 w-[65%] md:w-1/3 lg:w-1/3 xl:w-1/4"
+            className="my-4 w-[65%] md:w-1/3 lg:w-1/3 xl:w-1/5"
             src="/src/assets/Mockup/Phone2.png"
             alt="Phone2"
           />
           <img
-            className="my-4 w-[65%] md:w-1/3 lg:w-1/3 xl:w-1/4"
+            className="my-4 w-[65%] md:w-1/3 lg:w-1/3 xl:w-1/5"
             src="/src/assets/Mockup/Phone4.png"
             alt="Phone4"
           />
