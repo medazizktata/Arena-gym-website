@@ -58,7 +58,7 @@ function AppSection() {
         </div>
         <ButtonYellow
           buttonFont="font-robotoCon"
-          fontWeight="font-black"
+          fontWeight="font-black hover:scale-105"
           paddingX={10}
         >
           Plus de détails
