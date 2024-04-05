@@ -18,7 +18,7 @@ function HeroSection() {
           }}
         >
           <div className="relative mx-auto mx-[2%]">
-            <div className="inline absolute inset-x-0 bottom-1/5 transform translate-y-1/4 flex flex-col items-center text-white z-10 px-8 text-lg">
+            <div className="inline absolute inset-x-0 top-40 transform translate-y-1/4 flex flex-col items-center text-white z-10 px-8 text-lg">
               <div className="inline text-6xl font-Gentona uppercase text-center mb-8 flex flex-col">
                 <h1 className="inline text-9xl font-black">Arena Gym</h1>
                 <h2 className="inline text-7xl font-black">We are limitless</h2>

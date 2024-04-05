@@ -12,9 +12,9 @@ function Home() {
     <>
       <Navbar />
       <HeroSection />
-      {/* <ActivitiesSection/>
+      <ActivitiesSection/>
       <CoachesSection/> 
-      <SearchBox/> */}
+      <SearchBox/>
    
     </>
   );
