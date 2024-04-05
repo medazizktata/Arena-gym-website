@@ -1,6 +1,6 @@
 import React from "react";
 import BackgroundText from "../../components/BackgroundText";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import { getColor } from "../../utils/getColor";
 import CustomizableTextBox from "../../components/CustomizableTextBox";
 import BigCaroussel from "../../components/BigCaroussel";

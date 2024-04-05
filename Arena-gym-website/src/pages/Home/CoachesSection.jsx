@@ -18,7 +18,7 @@ function CoachesSection() {
       <div className="flex flex-col justify-center items-center text-lg">
         <ButtonYellow
           buttonFont="font-robotoCon"
-          fontWeight="font-black"
+          fontWeight="font-black hover:scale-105"
           paddingX={10}
         >
           Consulter nos coaches
