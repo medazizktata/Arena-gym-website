@@ -16,7 +16,7 @@
   }
   
   ::-webkit-scrollbar-track {
-    background: var(--color-white); /* Color of the scrollbar track */
+    background: var(--color-blackBG); /* Color of the scrollbar track */
   }
   
   ::-webkit-scrollbar-thumb {
