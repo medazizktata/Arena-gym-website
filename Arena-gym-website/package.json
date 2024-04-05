@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@obelism/react-svg": "^2.0.2",
     "axios": "^1.6.8",
     "external-svg-loader": "^1.7.1",
