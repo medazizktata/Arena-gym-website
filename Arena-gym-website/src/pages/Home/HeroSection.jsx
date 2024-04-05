@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import BackgroundText from "../../components/BackgroundText";
 import BigCaroussel from "../../components/BigCaroussel";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
