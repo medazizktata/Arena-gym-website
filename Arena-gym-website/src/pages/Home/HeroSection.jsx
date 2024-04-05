@@ -4,6 +4,7 @@ import BackgroundText from "../../components/BackgroundText";
 import BigCaroussel from "../../components/BigCaroussel";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
 import { getColor } from "../../utils/getColor";
+import ConsulterGalerieButton from "../../components/ConsulterGallerie";
 
 function HeroSection() {
   return (
@@ -30,18 +31,22 @@ function HeroSection() {
               <div className="inline flex flex-row gap-10">
                 <ButtonYellow
                   buttonFont="font-robotoCon"
-                  fontWeight="font-black"
+                  fontWeight="font-black scale-90"
                   paddingX={10}
                 >
                   En Savoir Plus
                 </ButtonYellow>
-                <ButtonYellow
+                {/*  <ButtonYellow
                   buttonFont="font-robotoCon"
                   fontWeight="font-black"
                   paddingX={10}
                 >
                   Voir la galerie
-                </ButtonYellow>
+                </ButtonYellow> */}
+
+                <a href="#">
+                  <ConsulterGalerieButton className={"hover:text-yellowMain transition duration-500 cursor-pointer"} />
+                </a>
               </div>
             </div>
             <div className="pb-16">
