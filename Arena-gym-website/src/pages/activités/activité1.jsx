@@ -12,7 +12,7 @@ import BelowFooter from "../../components/BelowFooter";
 
 function Activite() {
   const label = "Objectifs à atteindre";
-  const options = ["Option 1", "Option 2", "Option 3", "Option 4"];
+  const options = ["Choose Option", "Weight Loss", "Body Building", "Cross Fit", "Dance" ];
   return (
     <div>
       <Navbar />
@@ -47,9 +47,9 @@ function Activite() {
       </div>
 
       {/* Render cards above background text */}
-      <div className="mb-10 relative z-15" style={{ display: 'flex', flexDirection: 'column' }}>
+      <div className="mb-10 relative z-15 " >
 
-      <div className="absolute z-1 w-full top-10 opacity-50">
+      <div className="absolute z-1 w-full top-1/2 transform -translate-y-1/2 opacity-50 flex flex-col justify-between">
           <BackgroundText
             className=""
             text={"Activite"}
@@ -63,23 +63,25 @@ function Activite() {
             fontFamily={"urbanist"}
             strokeColor={"white"}
             textSize={20}
+            style={{marginTop:'100px'}}
           />
+          
         </div>
-        <div className="relative z-10 mt-20" style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='stoufa' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
-          <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='stoufa' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
-          <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='stoufa' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
+        <div className="relative z-10 mt-20 scale-90" style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='Body Building' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
+          <ActivityCard img='images/1000_F_524378456_7iH4roEgy8t8351zKypjRumlIbRfwhIO.jpg' nom='RPM' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
+          <ActivityCard img='images/dumbbells-gym-64a3f4bc2fe31.jpg' nom='Fitness' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
         </div>
 
         {/* Second set of cards */}
-        <div className="relative z-10 mt-20" style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='stoufa' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
-          <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='stoufa' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
-          <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='stoufa' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
+        <div className="relative z-10 scale-90 " style={{ display: 'flex', justifyContent: 'space-between', marginTop:'150px' }}>
+          <ActivityCard img='images/boxe-anglaise-debutant_dojo.jpg' nom='Boxe' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
+          <ActivityCard img='images/Gym-structure-1080x675.png' nom='Cross Fit' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
+          <ActivityCard img='images/1000_F_575226840_HVm83lSEIqArrnLNrhXxzebjeRJ14AtE.jpg' nom='Body Pump' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
         </div>
 
         {/* Third set of cards */}
-        <div className="relative z-10 mt-20" style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div className="relative z-10 scale-90 " style={{ display: 'flex', justifyContent: 'space-between', marginTop:'150px' }}>
           <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='stoufa' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
           <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='stoufa' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
         </div>
@@ -88,7 +90,6 @@ function Activite() {
 
       {/* Pagination */}
       <Pagination />
-      <BelowFooter/>
     </div>
   );
 }
