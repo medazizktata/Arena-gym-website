@@ -58,14 +58,14 @@
         }
       
         .shadow-yellow {
-          box-shadow:5px 5px 7.5px rgba(255, 210, 12, 0.822);
+          box-shadow:5px 5px 0px rgba(255, 210, 12, 0.822);
            
         }
         
         .shadow-white {
           border: solid white 0.15rem;
 
-          box-shadow: 4px 5px 3px rgba(255, 255, 255, 0.8);
+          box-shadow: 4px 5px 0px rgba(255, 255, 255, 0.8);
         }
       }
       

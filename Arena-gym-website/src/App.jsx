@@ -4,7 +4,7 @@ import Inscription from './pages/inscription/inscription.jsx';
 
 function App() {
   return (
-    <Inscription/>
+    <Home/>
   );
 }
 

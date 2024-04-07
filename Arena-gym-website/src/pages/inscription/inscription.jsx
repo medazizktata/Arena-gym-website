@@ -1,5 +1,5 @@
 
-import SubscriptionBox from "../../components/fiche_prix";
+import SubscriptionBox2 from "./fiche_prix_ins";
 import Form_Ins from "../../components/form_inscription";
 import Navbar from "../../components/Navbar";
 import BackgroundText from "../../components/BackgroundText";
@@ -27,7 +27,7 @@ function Inscription(){
         </div>
 
         <img
-            src="src/assets/Images/Caroussel/Hero-section/Arena_exterior_best.png"
+            src="src/assets/Images/inscription/Rectangle 43.png"
             className="absolute inset-0 w-full h-full object-cover"
             alt="Background"
         />
@@ -43,8 +43,8 @@ function Inscription(){
       <div className="w-full relative mt-24 mb-2">
         <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-4 md:space-x-8">
           <div className="w-full md:w-1/4 flex flex-col items-center">
-            <span className="inline text-white font-Urbanist font-black text-5xl pb-4">PACK CHOISI</span>
-            <SubscriptionBox
+            <span className="inline text-white font-Urbanist font-black text-5xl pb-6">PACK CHOISI</span>
+            <SubscriptionBox2
               packName="PACK 2"
               type={1}
               price="560"
@@ -56,6 +56,7 @@ function Inscription(){
                     </svg>
               }
               link="https://example.com"
+              offer="hidden"
             />
             <div className="p-12">
             <ButtonBlack buttonFont="font-bold" paddingX="px-8" fontWeight="font-bold">
@@ -67,7 +68,7 @@ function Inscription(){
             <img
               src="src/assets/Images/inscription/pngwing.com.png" // Utilisez votre image importée ici
               alt="Fitness"
-              className="relative w-64  z-10 max-w-xs md:max-w-md"
+              className="relative w-72  z-10 max-w-xs md:max-w-md"
               style={{ transform: 'translateX(-4rem)'  }} // Ajustez si nécessaire
             />
           </div>
