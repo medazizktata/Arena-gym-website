@@ -4,39 +4,19 @@ import Navbar from "../../components/Navbar/Navbar";
 import { getColor } from "../../utils/getColor";
 import CustomizableTextBox from "../../components/CustomizableTextBox";
 import BigCaroussel from "../../components/BigCaroussel";
+import PageIntroduction from "../../components/PageIntroduction";
 
 function About() {
   return (
     <>
-      <Navbar />
-      <div className="mb-10 relative">
-        <div className="inline-block flex flex-col relative z-10">
-          <div className="">
-            <BackgroundText
-              text={"A Propos"}
-              strokeColor="white"
-              fontFamily={"urbanist"}
-              textSize={20}
-            />
-          </div>
-          <h1 className="inline text-white font-Gentona font-black text-9xl text-center">
-            A Propos
-          </h1>
-        </div>
-
-        <img
-          src="src/assets/Images/Caroussel/Hero-section/Arena_exterior_best.png"
-          className="absolute inset-0 w-full h-full object-cover"
-          alt="Background"
+      <div className="my-20">
+        <PageIntroduction
+          imgSrc={
+            "src/assets/Images/Caroussel/Hero-section/Arena_exterior_best.png"
+          }
+          title={"A Propos"}
+          BGText={"A Propos"}
         />
-        <div
-          className="absolute inset-0 w-full"
-          style={{
-            background: `linear-gradient(to top, ${getColor(
-              "blackBG"
-            )}, rgba(255,255,255,0))`,
-          }}
-        ></div>
       </div>
       <div className="flex flex-col justify-center items-center">
         <img
