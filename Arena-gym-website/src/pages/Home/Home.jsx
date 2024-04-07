@@ -3,21 +3,24 @@ import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "./HeroSection";
 import ActivitiesSection from "./ActivitiesSection";
 import CoachesSection from "./CoachesSection";
-import About from "../About/About";
 import AppSection from "./AppSection";
 import BelowFooter from "../../components/BelowFooter";
-import Pagination from "../../components/Pagination";
+import SponsorsCarousel from "./SponsorsCarousel";
+import SponsorsSection from "./SponsorsSection";
+import MapCard from "../../components/MapCard";
+import MapSection from "./MapSection";
 
 function Home() {
   return (
     <>
-       <Navbar />
+      <Navbar />
       <HeroSection />
       <ActivitiesSection/>
       <CoachesSection/> 
       <AppSection/>
-      {/*<About/>*/}
-      <Pagination/>
+      <MapSection/>
+      <SponsorsSection/>
+
     </>
   );
 }
