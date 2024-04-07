@@ -34,7 +34,7 @@ const ActivityCard = ({ img, nom, icon }) => {
             src={icon}
             style={{
               position: 'absolute',
-              bottom: hovered ? '-30px' : '-50px',
+              bottom: hovered ? '130px' : '110px',
               transition: 'bottom 0.3s, transform 0.3s',
             }}
           />
