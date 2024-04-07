@@ -32,7 +32,7 @@ const BackgroundText = ({ text, fontFamily, strokeColor, textSize }) => {
           stroke={translatedColor}
           strokeWidth="0.2"
           opacity="50%"
-          fontSize={textSize}
+          font-size={textSize}
           className={`font-${fontFamily} uppercase font-black`}
         >
           {text}

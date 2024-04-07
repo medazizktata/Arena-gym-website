@@ -5,7 +5,7 @@ import ButtonYellow from "../../components/Buttons/ButtonYellow";
 function AppSection() {
   return (
     <>
-      <div className="my-20 px-14 relative flex flex-col items-center">
+      <div className="my-10 md:mx-20  px-14 relative flex flex-col items-center ">
         <div className="absolute z-1 w-full top-10 opacity-50">
           <BackgroundText
             className=""
@@ -22,7 +22,7 @@ function AppSection() {
             textSize={20}
           />
         </div>
-        <h1 className="font-urbanist text-center font-bold text-white text-5xl lg:text-7xl relative z-10 my-4">
+        <h1 className="font-urbanist text-center font-bold text-white text-4xl md:text-5xl lg:text-7xl xl:text-8xl relative z-10 my-4">
           Téléchargez notre application
         </h1>
         <img
@@ -49,9 +49,9 @@ function AppSection() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-10 justify-center items-center text-lg relative z-10">
-        <div className="px-4 md:px-0">
-          <h3 className="text-white text-2xl lg:text-4xl text-urbanist text-center">
+      <div className="flex flex-col gap-20 justify-center items-center text-lg relative z-10">
+        <div className="px-4 md:px-0 sm:py-0">
+          <h3 className="text-white text-2xl lg:text-4xl text-urbanist text-center w-[80%] mx-auto">
             Venez nous rendre visite pour découvrir ce que nous offrons pour
             améliorer votre condition physique !
           </h3>
