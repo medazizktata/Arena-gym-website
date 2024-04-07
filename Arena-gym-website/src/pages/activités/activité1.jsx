@@ -63,7 +63,6 @@ function Activite() {
             fontFamily={"urbanist"}
             strokeColor={"white"}
             textSize={20}
-            style={{marginTop:"100px"}}
           />
         </div>
         <div className="relative z-10 mt-20" style={{ display: 'flex', justifyContent: 'space-between' }}>
