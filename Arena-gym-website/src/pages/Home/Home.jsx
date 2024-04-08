@@ -14,6 +14,7 @@ function Home() {
       <HeroSection />
       <ActivitiesSection/>
       <CoachesSection/>
+      <SearchBox/>
 
 
        
@@ -22,7 +23,6 @@ function Home() {
       text="Plongez dans une expérience fitness hors du commun avec nos terrains de padel et piscines exclusives, intégrés à notre offre haut de gamme. Rejoignez-nous pour une remise en forme qui conjugue luxe, confort et performance."
       imageUrl="https://www.piscineavenue.com/wp-content/uploads/2020/04/prix-construction-piscine-olympique-600x321.jpeg"
       />
-      <SearchBox/>
 
 
 

@@ -20,14 +20,16 @@ const IMCForm=() => {
   
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-blackBG p-8">
-        <form ref={formRef} onSubmit={handleSubmit} className="bg-black bg-opacity-70 border-2 border-white p-8  w-full max-w-2xl">
-        <h1 className="text-yellowMain text-3xl font-bold mb-4 text-center ">CALCULER VOTRE IMC</h1>
+        <form ref={formRef} onSubmit={handleSubmit} className="bg-blackBG bg-opacity-70 border-2 border-white p-16  w-full max-w-2xl">
+        <h1 className="text-yellowMain text-4xl font-bold mb-4 text-center ">CALCULER VOTRE IMC</h1>
         <p className="text-white mb-6 text-center">Calculez votre indice de masse corporel (IMC) et découvrez votre poids idéal !</p>
-  
+        <div className=" mb-4" >
         <InputField label="Taille/cm" placeholder="Ex. 180" type="number" />
+        </div>
+        <div className=" mb-4">
         <InputField label="Poids/kg" placeholder="Ex. 75" type="number" />
-  
-        <div className="flex flex-wrap gap-0 mb-4">
+        </div>
+        <div className="flex flex-wrap gap-2 mb-4">
         <div className="flex-1">
           <DropdownField label="Age" options={ageOptions} />
         </div>
@@ -35,9 +37,10 @@ const IMCForm=() => {
           <DropdownField label="Sexe" options={['Homme', 'Femme']} />
         </div>
         </div>
-  
+        <div className=" mb-4">
+
         <DropdownField label="Fréquence d'activité" options={activityOptions} />
-  
+        </div>
         <div className="flex gap-24 mt-2 justify-center ">
           <Button onClick={handleReset} textColor="text-black" bgColor="bg-white" font="font-bold" padding="4">
             Supprimer

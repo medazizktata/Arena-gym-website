@@ -2,7 +2,7 @@ import React from 'react';
 
 const InputField = ({ label, placeholder , type, value }) => {
     return (
-        <div className="flex flex-col p-4">
+        <div className="flex flex-col ">
           <label className="text-white mb-2">{label}</label>
           <div className=' border-b-4 border-t-2 border-l-2 border-r-2 border-white'>
           <input

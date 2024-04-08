@@ -39,9 +39,6 @@ const SubscriptionBox2 = ({ type, packName, price, duration, items, svgIcon , li
           </li>
           ))}
         </ul>
-        <button className={`py-2 px-10 mt-4  ${buttonStyle} text-lg  mx-auto font-Gentona`} onClick={() => window.location.href = link}>
-          INSCRIRE MAINTENANT
-        </button>
       </div>
     </div>
   );
