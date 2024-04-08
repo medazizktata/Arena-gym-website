@@ -21,19 +21,19 @@ const Form_Ins = () => {
 
         <div className="flex gap-2 mb-4   ">
           <div className='grow'>
-          <InputField label="Nom" placeholder="Ex. Flen" type="text" />
+          <InputField name={"Nom"} label="Nom" placeholder="Ex. Flen" type="text" />
           </div>
           <div className='grow'>
-          <InputField label="Prénom" placeholder="Ex. Flen" type="text" />
+          <InputField name={"Prenom"} label="Prénom" placeholder="Ex. Flen" type="text" />
           </div>
         </div>
         <div className=" mb-4">
 
-        <InputField label="E-mail" placeholder="Ex. flen.falten@gmail.com" type="email" />
+        <InputField name={"Email"} label="E-mail" placeholder="Ex. flen.falten@gmail.com" type="email" />
         </div>
         <div className=" mb-4">
 
-        <InputField label="Numéro de téléphone" placeholder="+216" type="tel" />
+        <InputField name={"Numero"} label="Numéro de téléphone" placeholder="+216" type="tel" />
         </div>
         <div className=" mb-4">
 
