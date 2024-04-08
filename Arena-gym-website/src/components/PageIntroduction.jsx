@@ -50,7 +50,7 @@ function PageIntroduction({
           alt="Background"
         />
         <div
-          className={`absolute inset-0 w-full h-[${extraHeight+10}%]`}
+          className={`absolute inset-0 w-full h-[${extraHeight}%]`}
           style={{
             background: `linear-gradient(to top, ${getColor(
               "blackBG"
