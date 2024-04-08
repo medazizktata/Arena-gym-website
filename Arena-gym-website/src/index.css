@@ -8,6 +8,31 @@
     }
 }
 
+:root {
+  --color-black: #000;
+  --color-blackBG: #121212;
+  --color-white: #FFF;
+  --color-yellowMain: #FDEA1D;
+  --color-yellowBetter: #FBDE06;
+  --color-yellowDarkShadow: #3D3500;
+  --color-yellowLightShadow: #827200;
+  --color-greyLight: #D9D9D9;
+  --color-greyMedium: #7F7F7F;
+  --color-greyDark: #232323;
+}
+
+/* Usage */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-blackBG); /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-greyMedium); /* Color of the scrollbar thumb */
+}
 
 @layer components {
     .outer-box {

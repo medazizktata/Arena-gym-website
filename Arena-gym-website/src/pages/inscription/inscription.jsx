@@ -1,7 +1,7 @@
 
 import SubscriptionBox2 from "./fiche_prix_ins";
 import Form_Ins from "../../components/form_inscription";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import BackgroundText from "../../components/BackgroundText";
 import { getColor } from "../../utils/getColor";
 import CustomizableTextBox from "../../components/CustomizableTextBox";

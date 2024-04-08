@@ -1,9 +1,10 @@
 import React from "react";
-import Navbar from "../../components/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 import BackgroundText from "../../components/BackgroundText";
 import BigCaroussel from "../../components/BigCaroussel";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
 import { getColor } from "../../utils/getColor";
+import ConsulterGalerieButton from "../../components/ConsulterGallerie";
 
 function HeroSection() {
   return (
@@ -18,7 +19,7 @@ function HeroSection() {
           }}
         >
           <div className="relative mx-auto mx-[2%]">
-            <div className="inline absolute inset-x-0 bottom-1/5 transform translate-y-1/4 flex flex-col items-center text-white z-10 px-8 text-lg">
+            <div className="inline absolute inset-x-0 top-40 transform translate-y-1/4 flex flex-col items-center text-white z-10 px-8 text-lg">
               <div className="inline text-6xl font-Gentona uppercase text-center mb-8 flex flex-col">
                 <h1 className="inline text-9xl font-black">Arena Gym</h1>
                 <h2 className="inline text-7xl font-black">We are limitless</h2>
@@ -30,18 +31,22 @@ function HeroSection() {
               <div className="inline flex flex-row gap-10">
                 <ButtonYellow
                   buttonFont="font-robotoCon"
-                  fontWeight="font-black"
+                  fontWeight="font-black scale-90"
                   paddingX={10}
                 >
                   En Savoir Plus
                 </ButtonYellow>
-                <ButtonYellow
+                {/*  <ButtonYellow
                   buttonFont="font-robotoCon"
                   fontWeight="font-black"
                   paddingX={10}
                 >
                   Voir la galerie
-                </ButtonYellow>
+                </ButtonYellow> */}
+
+                <a href="#">
+                  <ConsulterGalerieButton className={"hover:text-yellowMain transition duration-500 cursor-pointer"} />
+                </a>
               </div>
             </div>
             <div className="pb-16">
@@ -78,7 +83,7 @@ function HeroSection() {
         <div className="flex flex-col justify-center items-center text-lg">
           <ButtonYellow
             buttonFont="font-robotoCon"
-            fontWeight="font-black"
+            fontWeight="font-black hover:scale-105"
             paddingX={10}
           >
             Voir nos Tarifs

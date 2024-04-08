@@ -1,0 +1,20 @@
+.logos-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  animation: slideAnimation 10s linear infinite;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.logo {
+  flex: 0 0 auto;
+  margin-right: 10px; /* Adjust spacing between logos */
+}
