@@ -14,7 +14,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Home />} errorElement={<ErrorPage />} />
+        <Route exact path="/" element={<Inscription />} errorElement={<ErrorPage />} />
         <Route
           path="/inscription"
           element={<Inscription />}
