@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SubscriptionBox = ({ type, packName, price, duration, items, svgIcon , link }) => {
+const SubscriptionBox = ({ type, packName, price, duration, items, svgIcon , link  }) => {
   const boxStyle = type === 1 ? 'bg-yellowMain relative' : 'bg-blackBG text-white relative';
   const priceColor = type === 1 ? 'text-black' : 'text-yellowMain';
   const boxClass = type === 1 ? 'shadow-yellow' : 'shadow-white' ;
@@ -15,7 +15,7 @@ const SubscriptionBox = ({ type, packName, price, duration, items, svgIcon , lin
     <div className={`p-4   ${boxStyle} ${boxClass} max-w-sm w-full`} style={{overflow:'hidden'}}>
       {type === 1 && (
         <>
-          <div className="font-bold text-black font-Urbanist text-xs  p-1.5 w-32 text-center  bg-white absolute top-5 -right-1 transform rotate-45 translate-x-1/4 -translate-y-1/10">
+          <div className="font-bold text-black font-Urbanist text-xs   p-1.5 w-32 text-center  bg-white absolute top-5 -right-1 transform rotate-45 translate-x-1/4 -translate-y-1/10">
             Best Offer
         </div>
           
@@ -27,8 +27,8 @@ const SubscriptionBox = ({ type, packName, price, duration, items, svgIcon , lin
       )}
       <div className="flex flex-col items-start justify-start mt-10">
       <div className="flex items-baseline">
-          <h2 className={`text-4xl font-Urbanist ${priceColor} font-bold`}>{price}</h2>
-          <span className={`text-2xl font-Urbanist  ml-2.5 ${priceColor} font-bold`} style={{ position: 'relative', bottom: '0.35em'}}>{type === 1 ? 'TND' : 'TND'}</span>
+          <h2 className={`text-5xl font-Urbanist ${priceColor} font-bold`}>{price}</h2>
+          <span className={`text-3xl font-Urbanist  ml-2.5 ${priceColor} font-bold`} style={{ position: 'relative', bottom: '0.35em'}}>{type === 1 ? 'TND' : 'TND'}</span>
         </div>
         <p className="mb-6">{duration}</p>
         <ul className="list-disc  font-roboto font-bold">
