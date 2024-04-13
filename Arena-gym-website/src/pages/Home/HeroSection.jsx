@@ -5,6 +5,7 @@ import BigCaroussel from "../../components/BigCaroussel";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
 import { getColor } from "../../utils/getColor";
 import ConsulterGalerieButton from "../../components/ConsulterGallerie";
+import { FaCheckCircle } from "react-icons/fa";
 
 function HeroSection() {
   return (
@@ -45,7 +46,11 @@ function HeroSection() {
                 </ButtonYellow> */}
 
                 <a href="#">
-                  <ConsulterGalerieButton className={"hover:text-yellowMain transition duration-500 cursor-pointer"} />
+                  <ConsulterGalerieButton
+                    className={
+                      "hover:text-yellowMain transition duration-500 cursor-pointer"
+                    }
+                  />
                 </a>
               </div>
             </div>
@@ -70,14 +75,28 @@ function HeroSection() {
         >
           <polygon points="0,0 100,0 50,100" fill={getColor("yellowMain")} />
         </svg>
-        <div className="text-white text-4xl font-urbanist font-bold inline mx-[20%] my-[5%] bg-blackBG bottom-0 flex flex-row justify-between">
-          <div className="flex flex-col gap-16">
-            <span>Fitness Classes</span>
-            <span>Personal Training</span>
-          </div>
-          <div className="flex flex-col justify-between">
-            <span>Premium Equipment</span>
-            <span>Quality Coaches</span>
+        <div className="mx-auto">
+          <div className=" text-white text-4xl font-urbanist font-bold inline mx-[20%] my-[5%] bg-blackBG bottom-0 flex flex-row justify-between ">
+            <div className="inline flex flex-col gap-16">
+              <div className="inline flex gap-5">
+                <FaCheckCircle />
+                <span>Classes de Fitness</span>
+              </div>
+              <div className="inline flex gap-5">
+                <FaCheckCircle />
+                <span>Entrainement personnel</span>
+              </div>
+            </div>
+            <div className="inline flex flex-col justify-between">
+              <div className="inline flex gap-5">
+                <FaCheckCircle />
+                <span>Quality Coaches</span>
+              </div>
+              <div className="inline flex gap-5">
+                <FaCheckCircle />
+                <span>Equipments haute qualité</span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center text-lg">
