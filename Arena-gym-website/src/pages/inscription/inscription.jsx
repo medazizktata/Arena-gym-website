@@ -65,10 +65,10 @@ function Inscription(){
           </div>
           <div className="w-full md:w-1/6 relative">
             <img
-              src="src/assets/Images/inscription/pngwing.com.png" // Utilisez votre image importée ici
+              src="src/assets/Images/inscription/pngwing.com.png"
               alt="Fitness"
               className="relative w-64  z-10 max-w-xs md:max-w-md"
-              style={{ transform: 'translateX(-4rem)'  }} // Ajustez si nécessaire
+              style={{ transform: 'translateX(-4rem)'  }}
             />
           </div>
         </div>
