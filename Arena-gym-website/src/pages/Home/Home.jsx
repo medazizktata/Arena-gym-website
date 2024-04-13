@@ -16,7 +16,7 @@ function Home() {
       <Navbar />
       <HeroSection />
       <ActivitiesSection/>
-      <CoachesSection/> 
+      <CoachesSection/>
       <AppSection/>
       <MapSection/>
       <SponsorsSection/>
