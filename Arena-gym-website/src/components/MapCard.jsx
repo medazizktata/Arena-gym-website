@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "./form_inscription";
+import Form from "../pages/inscription/form_inscription";
 const MapCard = ({ title, subtitle, url, width="1000px", height="500px" }) => {
   return (
     <div className="flex flex-col items-center justify-content min-h-screen px-4 font-urbanist">
