@@ -1,12 +1,25 @@
-import React from 'react';
 
-const DropdownField = ({ label, options }) => {
+
+// DropdownField.js
+import React from 'react';
+import { useFormContext } from 'react-hook-form';
+import downArrowSVG from '../assets/Icons/down-arrow-svgrepo-com.svg';
+
+const DropdownField = ({ name, label, options }) => {
+  const { register } = useFormContext();
   return (
-    <div className="flex flex-col p-4">
+    <div className="flex flex-col ">
       <label className="text-white mb-2">{label}</label>
-      <div className=" border-b-4 border-t-2 border-l-2 border-r-2 border-white">
+      <div className="border-b-4 border-t-2 border-l-2 border-r-2 border-white">
         <select
+          {...register(name)}
           className="bg-blackBG text-white w-full py-2 px-3 cursor-pointer appearance-none"
+          style={{
+            backgroundImage: `url(${downArrowSVG})`,
+            backgroundPosition: 'right 0.5rem center',
+            backgroundSize: '1.5rem',
+            backgroundRepeat: 'no-repeat'
+          }}
         >
           {options.map((option, index) => (
             <option key={index} value={option} className="bg-blackBG text-white">
@@ -20,3 +33,4 @@ const DropdownField = ({ label, options }) => {
 };
 
 export default DropdownField;
+
