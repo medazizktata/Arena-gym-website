@@ -8,6 +8,7 @@ function ButtonBlack({ children, buttonFont, paddingX, fontWeight }) {
       bgColor="bg-blackBG"
       font={buttonFont}
       padding={paddingX}
+      transparentBorder={0}
       className={`${fontWeight} border border-1 border-greyMedium font-black shadow-buttonGreyMedium hover:shadow-buttonWhite transition-all duration-500 hover:text-white transition-all duration-500`}
     >
       {children}

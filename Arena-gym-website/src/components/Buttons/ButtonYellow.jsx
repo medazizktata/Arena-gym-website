@@ -8,6 +8,7 @@ function ButtonYellow({ children, buttonFont, paddingX, fontWeight }) {
       bgColor="bg-yellowMain"
       font={buttonFont}
       padding={paddingX}
+      transparentBorder={1}
       className={`${fontWeight} border border-1 border-transparent shadow-buttonYellowDark hover:border-white transition-all duration-500 hover:shadow-buttonYellowLight transition-all duration-500`}
     >
       {children}
