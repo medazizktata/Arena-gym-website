@@ -8,13 +8,13 @@ import ErrorPage from "./utils/ErrorPage";
 import Galerie from "./pages/Gallery/Galerie";
 import About from "./pages/About/About";
 import BelowFooter from "./components/BelowFooter.jsx";
-
+import Tarifs from "./pages/Tarifs/Tarifs.jsx";
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Inscription />} errorElement={<ErrorPage />} />
+        <Route exact path="/" element={<Home />} errorElement={<ErrorPage />} />
         <Route
           path="/inscription"
           element={<Inscription />}

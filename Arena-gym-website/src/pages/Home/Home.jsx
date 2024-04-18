@@ -7,6 +7,7 @@ import About from "../About/About";
 import SearchBox from "../../components/SearchBox";
 import IMCForm from "./form_imc";
 import SplitRectangle from "./Sokra_only";
+import ContactForm from "./form_com";
 function Home() {
   return (
     <>
@@ -27,6 +28,7 @@ function Home() {
 
 
       <IMCForm/>
+      <ContactForm/>
     </>
   );
 }

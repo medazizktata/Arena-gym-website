@@ -5,7 +5,7 @@ import { useForm, FormProvider } from 'react-hook-form';
 
 import InputField from '../../components/input';
 import DropdownField from '../../components/input_2';
-import DropdownField2 from '../../components/Input_2_disabled';
+import DropdownField2 from './Input_2_disabled';
 const Form_Ins = () => {
 
   const methods = useForm();
