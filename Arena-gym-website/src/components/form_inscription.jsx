@@ -1,6 +1,3 @@
-
-
-
 import React, { useState } from 'react';
 import InputField from './input';
 import DropdownField from './input_2';

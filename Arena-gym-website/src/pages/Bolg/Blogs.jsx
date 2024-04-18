@@ -1,6 +1,7 @@
 import React from 'react';
-import imageBlog from '../assets/Img/imageBlog.jpg';
-import BlogPost from '../components/BlogPost';
+import imageBlog from '../../assets/Img/imageBlog.jpg';
+import BlogPost from '../../components/BlogPost';
+
 
 function BlogPostContainer() {
   return (
