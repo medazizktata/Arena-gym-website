@@ -4,7 +4,7 @@ import { useForm, FormProvider } from "react-hook-form";
 
 import InputField from "../../components/input";
 import DropdownField from "../../components/input_2";
-import DropdownField2 from "../../components/Input_2_disabled";
+import DropdownField2 from "./Input_2_disabled";
 import { IoMdMale } from "react-icons/io";
 import { IoMdFemale } from "react-icons/io";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
