@@ -28,7 +28,7 @@ const Form_Ins = () => {
       <FormProvider {...methods}>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="shadow-cardWhite border-2 border-white hover:shadow-cardYellowMain hover:border-yellowMain cursor-pointer transition all duration 500 font-robotoCon bg-blackBG bg-opacity-70 p-14 w-full max-w-2xl"
+          className="shadow-cardGreyMedium border-2 border-white hover:shadow-cardYellowMain hover:border-yellowMain cursor-pointer transition all duration 500 font-robotoCon bg-blackBG bg-opacity-70 p-14 w-full max-w-2xl"
         >
           <h1 className="text-yellowMain text-7xl font-bold mb-6 text-center">
             REJOIGNEZ-NOUS
