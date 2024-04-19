@@ -71,7 +71,7 @@ const SubscriptionBox = ({
   const priceColor = type === 1 ? 'text-black' : 'text-yellowMain h-22';
   const boxClass = type === 1 ? 'shadow-yellow' : 'shadow-white';
   const buttonStyle = type === 1 ? 'bg-black text-white' : 'bg-yellowMain text-black';
-  const sizeStyle = type === 1 ? 'h-full' : 'h-5/6'; // Ajuster la hauteur ici si nécessaire
+  const sizeStyle = type === 1 ? 'h-full' : 'min-h-96'; // Ajuster la hauteur ici si nécessaire
   
   const icon = svgIcon || (
     // Default SVG icon
@@ -79,6 +79,7 @@ const SubscriptionBox = ({
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
     </svg>
   );
+
 
   return (
     <div className={`${boxStyle} ${sizeStyle} ${boxClass}`}>
