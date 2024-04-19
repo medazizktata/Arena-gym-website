@@ -39,6 +39,8 @@ export default {
         'buttonGreyLight': `0 3px 0 0 ${theme('colors.greyLight')}`,
         'buttonGreyMedium': `0 3px 0 0 ${theme('colors.greyMedium')}`,
         'buttonGreyDark': `0 3px 0 0 ${theme('colors.greyDark')}`,
+        'buttonblackBG': `0 3px 0 0 ${theme('colors.blackBG')}`,
+
         'cardYellowDark': `5px 5px 0 ${theme('colors.yellowDarkShadow')}`,
         'cardYellowLight': `5px 5px 0 ${theme('colors.yellowLightShadow')}`,
         'cardWhite': `5px 5px 0 ${theme('colors.white')}`,
@@ -46,6 +48,11 @@ export default {
         'cardGreyDark': `5px 5px 0 ${theme('colors.greyDark')}`,
         'cardGreyLight': `5px 5px 0 ${theme('colors.greyLight')}`,
         'cardYellowMain': `5px 5px 0 ${theme('colors.yellowMain')}`,
+        'cardblackBG': `5px 5px 0 ${theme('colors.blackBG')}`,
+        'cardBlueMale':`5px 5px 0 ${theme('colors.blueMale')}`,
+        'cardPinkFemale':`5px 5px 0 ${theme('colors.pinkFemale')}`,
+
+
         'cardSmallYellowDark': `3px 3px 0 ${theme('colors.yellowDarkShadow')}`,
         'cardSmallYellowLight': `3px 3px 0 ${theme('colors.yellowLightShadow')}`,
         'cardSmallWhite': `3px 3px 0 ${theme('colors.white')}`,
@@ -53,11 +60,13 @@ export default {
         'cardSmallGreyDark': `3px 3px 0 ${theme('colors.greyDark')}`,
         'cardSmallGreyLight': `3px 3px 0 ${theme('colors.greyLight')}`,
         'cardSmallYellowMain': `3px 3px 0 ${theme('colors.yellowMain')}`,
-        'cardBlueMale':`5px 5px 0 ${theme('colors.blueMale')}`,
+        'cardSmallblackBG': `3px 3px 0 ${theme('colors.blackBG')}`,
+
+
         'cardSmallBlueMale':`3px 3px 0 ${theme('colors.blueMale')}`,
         'cardSmallBlueMaleDark':`3px 3px 0 ${theme('colors.blueMaleDark')}`,
+
         'cardSmallPinkFemale':`3px 3px 0 ${theme('colors.pinkFemale')}`,
-        'cardPinkFemale':`5px 5px 0 ${theme('colors.pinkFemale')}`,
         'cardSmallPinkFemaleDark':`3px 3px 0 ${theme('colors.pinkFemaleDark')}`,
 
       }),
