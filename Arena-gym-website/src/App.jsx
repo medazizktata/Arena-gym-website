@@ -10,66 +10,95 @@ import About from "./pages/About/About";
 import BelowFooter from "./components/BelowFooter.jsx";
 import GalerieV2 from "./pages/Gallery/Galeriev2.jsx";
 import Planning from "./pages/Planning/Planning.jsx";
+import Footer from "./components/Footer.jsx";
+import BlogPostContainer from "./pages/Blog/Blogs.jsx";
+import ChoisirSalle from "./pages/ChoisirSalle/ChoisirSalle.jsx";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div className="relative">
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={<Home />}
-            errorElement={<ErrorPage />}
-          />
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={<ChoisirSalle />}
+          errorElement={<ErrorPage />}
+        />
+      </Routes>
+      <div>
+        <Navbar />
+        <div className="relative">
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={<ChoisirSalle />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              exact
+              path="/home"
+              element={<Home />}
+              errorElement={<ErrorPage />}
+            />
 
-          <Route
-            path="/inscription"
-            element={<Inscription />}
-            errorElement={<ErrorPage />}
-          />
-          <Route
-            path="/galerie"
-            element={<GalerieV2 />}
-            errorElement={<ErrorPage />}
-          />
-          <Route
-            path="/activites"
-            element={<Home />}
-            errorElement={<ErrorPage />}
-          />
-          <Route
-            path="/coaches"
-            element={<Home />}
-            errorElement={<ErrorPage />}
-          />
-          <Route path="/blog" element={<Home />} errorElement={<ErrorPage />} />
-          <Route
-            path="/tarifs"
-            element={<Home />}
-            errorElement={<ErrorPage />}
-          />
-          <Route
-            path="/planning"
-            element={<Planning />}
-            errorElement={<ErrorPage />}
-          />
-          <Route
-            path="/contact"
-            element={<Home />}
-            errorElement={<ErrorPage />}
-          />
-          <Route
-            path="/about"
-            element={<About />}
-            errorElement={<ErrorPage />}
-          />
-        </Routes>
+            <Route
+              path="/inscription"
+              element={<Inscription />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/galerie"
+              element={<GalerieV2 />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/activites"
+              element={<Home />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/coaches"
+              element={<Home />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/blog"
+              element={<BlogPostContainer />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/tarifs"
+              element={<Home />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/planning"
+              element={<Planning />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/contact"
+              element={<Home />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/about"
+              element={<About />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/inscription"
+              element={<Inscription />}
+              errorElement={<ErrorPage />}
+            />
+          </Routes>
+        </div>
+        <div className="mt-60 w-full bottom-0 mx-auto">
+          <Footer />
+          <BelowFooter />
+        </div>
       </div>
-      {/* <div className="mt-20 w-full bottom-0 mx-auto">
-        <BelowFooter />
-      </div> */}
     </>
   );
 }
