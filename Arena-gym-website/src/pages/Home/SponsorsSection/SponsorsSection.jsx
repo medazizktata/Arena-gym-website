@@ -1,5 +1,5 @@
 import React from "react";
-import BackgroundText from "../../components/BackgroundText";
+import BackgroundText from "../../../components/BackgroundText";
 import SponsorsCarousel from "./SponsorsCarousel";
 function SponsorsSection() {
   return (

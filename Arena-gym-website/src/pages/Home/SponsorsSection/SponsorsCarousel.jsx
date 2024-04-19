@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "./SponsorsCarouselStyle.css";
-import CustomizableTextBox from "../../components/CustomizableTextBox";
-import BackgroundText from "../../components/BackgroundText";
+import CustomizableTextBox from "../../../components/CustomizableTextBox";
+import BackgroundText from "../../../components/BackgroundText";
 
 const SponsorsCarousel = () => {
   const logosContainerRef = useRef(null);
