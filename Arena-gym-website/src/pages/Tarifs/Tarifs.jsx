@@ -1,7 +1,7 @@
 import SubscriptionBox from "../../components/fiche_prix";
 
 
-
+import PageIntroduction from "../../components/PageIntroduction";
 function Tarifs(){
 const packsData = [
     { type: 'type2', packName: 'PACK 1', price: '200', duration: 'par mois', items: ['Cross kids', 'Born to move', 'Box', 'Judo'], svgIcon: <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,14 +23,20 @@ const packsData = [
 , link: '#' }
   ];
 return(
-
+  <div>
+  <PageIntroduction
+        imgSrc={"src/assets/Images/Tarifs/Secret-8 1.png"}
+        title={"Tarifs"}
+        subTitle="Nos Packs"
+        titleProps="text-9xl text-white text-center"
+      />
     <div className="flex justify-center  items-center bg-backgroundPattern p-20 gap-4 space-x-4 mt-32">
 
     {packsData.map((pack, index) => (
       <SubscriptionBox key={index} {...pack} />
     ))}
   </div>
-
+  </div>
 )
     }
     export default Tarifs;

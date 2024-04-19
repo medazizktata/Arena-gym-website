@@ -2,7 +2,7 @@
 import React from 'react';
 import { useForm, FormProvider } from 'react-hook-form';
 import InputField from '../../components/input';
-import Button from '../../components/Buttons/Button';
+import ButtonYellow from '../../components/Buttons/ButtonYellow';
 
 const ContactForm = () => {
     const methods = useForm();
@@ -28,10 +28,10 @@ const ContactForm = () => {
                     <div className="mb-4">
                         <InputField name="message" label="Message" type="textarea" /> {/* Assurez-vous que votre InputField prend en charge le type "textarea" */}
                         </div>
-                        <div className="mt-4">
-    <Button type="submit" textColor="text-black" bgColor="bg-yellowMain" font="font-bold" padding="4" className="w-full">
+                        <div className="mt-4 ">
+    <ButtonYellow buttonType={"submit"} buttonFont="font-bold" paddingX="4" fontWeight={"w-full"}>
         Envoyer
-    </Button>
+    </ButtonYellow>
 </div>
                     </form>
                 </div>

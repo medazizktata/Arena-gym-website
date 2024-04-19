@@ -6,6 +6,7 @@ import { useForm, FormProvider } from 'react-hook-form';
 import DropdownField from '../../components/input_2';
 import InputField from '../../components/input';
 import Button from '../../components/Buttons/Button';
+import ButtonYellow from '../../components/Buttons/ButtonYellow';
 
 const IMCForm = () => {
     const methods = useForm(); // Initialiser React Hook Form
@@ -52,12 +53,12 @@ const IMCForm = () => {
         <DropdownField name="activite" label="Fréquence d'activité" options={activityOptions} />
         </div>
         <div className="flex gap-24 mt-2 justify-center ">
-          <Button onClick={handleReset} textColor="text-black" bgColor="bg-white" font="font-bold" padding="4">
+          <Button typeB={"reset"} onClick={handleReset} textColor="text-black" bgColor="bg-white" font="font-bold" padding="4">
             Supprimer
           </Button>
-          <Button type="submit" textColor="text-black" bgColor="bg-yellow-500" font="font-bold" padding="4">
+          <ButtonYellow buttonType={"submit"}  buttonFont="font-bold" paddingX="4">
             Calculer
-          </Button>
+          </ButtonYellow>
         </div>
       </form>
     </div>

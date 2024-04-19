@@ -34,6 +34,7 @@
   background: var(--color-greyMedium); /* Color of the scrollbar thumb */
 }
 
+
 @layer components {
     .outer-box {
         @apply relative;
@@ -93,4 +94,3 @@
           box-shadow: 4px 5px 0px rgba(255, 255, 255, 0.8);
         }
       }
-      

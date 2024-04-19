@@ -15,6 +15,7 @@ function About() {
             "src/assets/Images/Caroussel/Hero-section/Arena_exterior_best.png"
           }
           title={"A Propos"}
+          titleProps="text-9xl text-white text-center"
           BGText={"A Propos"}
         />
       </div>

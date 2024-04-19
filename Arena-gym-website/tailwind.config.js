@@ -25,6 +25,10 @@ export default {
        greyLight: "#D9D9D9",
        greyMedium: "#7F7F7F",
        greyDark: "#232323",
+       blueMale:"#2196F3",
+       blueMaleDark:"#16578A",
+       pinkFemale: "#FF1744",
+       pinkFemaleDark: "#930E28",
 
       },
       boxShadow: theme => ({
@@ -49,6 +53,12 @@ export default {
         'cardSmallGreyDark': `3px 3px 0 ${theme('colors.greyDark')}`,
         'cardSmallGreyLight': `3px 3px 0 ${theme('colors.greyLight')}`,
         'cardSmallYellowMain': `3px 3px 0 ${theme('colors.yellowMain')}`,
+        'cardBlueMale':`5px 5px 0 ${theme('colors.blueMale')}`,
+        'cardSmallBlueMale':`3px 3px 0 ${theme('colors.blueMale')}`,
+        'cardSmallBlueMaleDark':`3px 3px 0 ${theme('colors.blueMaleDark')}`,
+        'cardSmallPinkFemale':`3px 3px 0 ${theme('colors.pinkFemale')}`,
+        'cardPinkFemale':`5px 5px 0 ${theme('colors.pinkFemale')}`,
+        'cardSmallPinkFemaleDark':`3px 3px 0 ${theme('colors.pinkFemaleDark')}`,
 
       }),
       backgroundImage:{

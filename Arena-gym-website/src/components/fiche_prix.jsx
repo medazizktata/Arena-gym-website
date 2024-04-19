@@ -88,11 +88,13 @@ const SubscriptionBox = ({
         </div>
       )}
 
-      {type === 1 && (
+      
         <div className="py-3 font-bold text-xl font-Gentona uppercase absolute top-0 left-4">
           {packName}
         </div>
-      )}
+        <div className={`py-3 font-bold text-xl font-Gentona uppercase absolute top-0 left-4 ${type === 1 ? 'text-black' : 'text-white'}`}>
+  {packName}
+        </div>
 
       <div className="flex flex-col items-start justify-start mt-10">
         <div className="flex items-baseline">
