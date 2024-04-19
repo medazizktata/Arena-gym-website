@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ImageHover from "../ImageHover";
 import ButtonYellow from "../Buttons/ButtonYellow";
 import HamburgerIcon from "./HamburgerCrossIcon/HamburgerCrossIcon";
 import { Link } from "react-router-dom";
-
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,10 +11,31 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const [navbarBackground, setNavbarBackground] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 200;
+      if (isScrolled !== navbarBackground) {
+        setNavbarBackground(isScrolled);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [navbarBackground]);
+
   return (
-    <nav className="bg-black block">
+    <nav className="">
       <div className="fixed top-0 left-0 w-full z-50">
-        <div className="flex justify-between px-10 py-5 mx-auto bg-blackBG text-white">
+        <div
+          className={`flex justify-between px-10 py-5 mx-auto text-white ${
+            navbarBackground ? "bg-blackBG" : "bg-transparent"
+          } transition-all duration-900`}
+        >
           <div className="inline-flex items-center text-center w-40 hover:text-yellowMain transition duration-500 cursor-pointer">
             <Link
               to="/"
@@ -35,7 +55,7 @@ function Navbar() {
           {/* Desktop Menu Links */}
           <div className="hidden lg:flex lg:space-x-3 items-center text-center font-urbanist font-semibold">
             <Link
-              to="/"
+              to="/home"
               className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
             >
               <span className="block">Acceuil</span>
@@ -129,7 +149,7 @@ function Navbar() {
             to="#"
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
-            <span className="block">Acceuil</span>
+            <span className="block hidden">Acceuil</span>
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
             <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
           </Link>
