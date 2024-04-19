@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        background-color: #121212;
+    }
+}
+
+
+.slide {
+    width: 250px;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+
+.slide-active {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #FBDE06;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+
+.slideextreme {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.carrousel {
+    width: 1125px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow {
+    font-size: 30px;
+    padding: 5px 15px;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    width: 50px;
+    position: absolute;
+    background-color: white;
+    top: 50%; /* Positionnement vertical au centre */
+    transform: translateY(-50%); /* Ajustement pour centrer verticalement */
+}
+
+.arrow-left {
+    left: 0px;
+}
+
+.arrow-right {
+    right: 30px;
+}
+
+.slide-coach {
+    width: 250px;
+    height: 250px;
+    margin-top: 25px;
+    margin-left: -20px;
+    margin-right: -20px;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.slide-active-coach {
+    width: 300px;
+    height: 300px;
+    border: 3px solid #FBDE06;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 3;
+}
+
+
+.slideextreme-coach {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.arrowcoach {
+    font-size: 30px;
+    padding: 5px 15px;
+    border-radius: 50%; /* Modifier le border-radius pour rendre les boutons ronds */
+    display: flex;
+    justify-content: center; /* Centrage horizontal */
+    align-items: center; /* Centrage vertical */
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    top: 50%; /* Positionnement vertical au centre */
+    transform: translateY(-50%); /* Ajustement pour centrer verticalement */
+    z-index: 0;
+}
