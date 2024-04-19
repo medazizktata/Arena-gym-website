@@ -1,6 +1,6 @@
 import React from "react";
 import BackgroundText from "../../components/BackgroundText";
-import SponsorsCarousel from "./SponsorsCarousel";
+import SponsorsCarousel from "./SponsorsSection/SponsorsCarousel";
 import MapCard from "../../components/MapCard";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
 function MapSection() {
@@ -32,7 +32,7 @@ function MapSection() {
             />
           </div>
         </div>
-        <div className="relative z-10 w-full bottom-10">
+        <div className="relative z-10 w-full bottom-10 ">
           <MapCard
             url={
               "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d797.9554495945297!2d10.258134042977934!3d36.87068406492787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cb94862d47bf%3A0x494dcecf1c908ab8!2sArena%20Gym%20Premium!5e0!3m2!1sen!2stn!4v1712477310349!5m2!1sen!2stn"
