@@ -3,6 +3,8 @@ import ImageHover from "../ImageHover";
 import ButtonYellow from "../Buttons/ButtonYellow";
 import HamburgerIcon from "./HamburgerCrossIcon/HamburgerCrossIcon";
 import { Link } from "react-router-dom";
+
+
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
