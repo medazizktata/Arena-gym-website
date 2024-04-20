@@ -5,6 +5,8 @@ import { getColor } from "../../utils/getColor";
 import CustomizableTextBox from "../../components/CustomizableTextBox";
 import BigCaroussel from "../../components/BigCaroussel";
 import PageIntroduction from "../../components/PageIntroduction";
+import ContactForm from "../Home/ContactForm";
+import ContactSection from "../Home/ContactSection";
 
 function About() {
   return (
@@ -63,9 +65,9 @@ function About() {
         </div>
       </div>
       <BigCaroussel />
-      <div className="mt-20 flex flex-row space-around justify-content align-items ">
+      <div className="mt-20 flex flex-row gap-20 space-around justify-center align-items ">
         <CustomizableTextBox
-          className="mx-20 text-blackBG"
+          className=" text-blackBG"
           size="33%"
           text={`<div class="mx-10 flex flex-col gap-5 justify-content align-items">
               <div>
@@ -81,7 +83,7 @@ function About() {
           textColor={"text-black"}
         />
         <CustomizableTextBox
-          className="mx-20 text-blackBG"
+          className=" text-blackBG"
           size="33%"
           text={`<div class="mx-10 flex flex-col gap-5 justify-content align-items">
               <div>
@@ -96,7 +98,7 @@ function About() {
           shadow="shadow-cardGreyMedium"
         />
         <CustomizableTextBox
-          className="mx-20 text-black"
+          className=" text-black"
           size="33%"
           text={`<div class="mx-10 flex flex-col gap-5 justify-content align-items">
               <div>
@@ -111,6 +113,9 @@ function About() {
           shadow="shadow-cardGreyMedium"
           textColor={"text-black"}
         />
+      </div>
+      <div className="mt-20">
+        <ContactSection/>
       </div>
     </>
   );
