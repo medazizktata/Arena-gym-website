@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./pages/Home/Home.jsx";
-import Inscription from "./pages/inscription/inscription.jsx";
+import Inscription from "./pages/inscription/Inscription.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Tarifs from "./pages/Tarifs/Tarifs.jsx";
 import ReactDOM from "react-dom/client";
@@ -70,7 +70,7 @@ function App() {
             />
             <Route
               path="/tarifs"
-              element={<Home />}
+              element={<Tarifs />}
               errorElement={<ErrorPage />}
             />
             <Route
