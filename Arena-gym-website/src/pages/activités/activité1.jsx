@@ -1,4 +1,4 @@
-import SubscriptionBox from "../../components/fiche_prix";
+import SubscriptionBox from "../../components/FichePrix";
 import Form_Ins from "../../components/form_inscription";
 import Navbar from "../../components/Navbar/Navbar";
 import { getColor } from "../../utils/getColor";
