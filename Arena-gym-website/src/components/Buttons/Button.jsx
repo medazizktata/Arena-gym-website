@@ -1,9 +1,18 @@
 import React from 'react';
 
-function Button({ children, textColor, bgColor, font, className }) {
+function Button({ children, textColor, bgColor, font, padding, className, transparentBorder = 1, typeB }) {
+
+  const borderClass = transparentBorder === 1 ? "border border-transparent" : "";
+
+  let typeProp = "button"
+
+  if (typeB === "submit" || typeB === "reset") {
+    typeProp = typeB;
+  }
   return (
     <button
-      className={`h-15 px-6 py-2 border border-1 border-transparent hover:border-white transition-all duration-500 ${textColor} ${bgColor} ${font} ${className}`}
+      type={typeProp} 
+      className={`h-15 px-${padding} py-2 ${borderClass} hover:border-white transition-all duration-500 ${textColor} ${bgColor} ${font} ${className}`}
     >
       {children}
     </button>
