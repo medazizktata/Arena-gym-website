@@ -1,5 +1,6 @@
 import BackgroundText from "../../components/BackgroundText";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
+import ContactForm from "./ContactForm";
 import IMCForm from "./FormIMC";
 
 function ContactSection() {
@@ -18,7 +19,7 @@ function ContactSection() {
           </div>
         </div>
         <div className="flex justify-center relative z-10 w-full bottom-10">
-          <IMCForm />
+          <ContactForm/>
         </div>
       </div>
     </>

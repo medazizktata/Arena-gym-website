@@ -43,7 +43,7 @@ export default function Example() {
   }
 
   return (
-    <div className="p-5 bg-white font-robotoCon">
+    <div className="px-6 py-10 bg-white font-robotoCon shadow-cardGreyMedium border-2 border-greyDark hover:shadow-cardYellowMain hover:border-yellowMain cursor-pointer transition all duration 500 font-robotoCon w-full max-w-xl">
       <div className="max-w-md px-4 mx-auto sm:px-7 md:max-w-4xl md:px-6">
         <div className="md:grid md:grid-cols-1 md:divide-x md:divide-gray-200">
           <div className="">
@@ -74,7 +74,7 @@ export default function Example() {
                     type="button"
                     onClick={() => setSelectedDay(day)}
                     className={classNames(
-                      isEqual(day, selectedDay) && "text-black",
+                      isEqual(day, selectedDay) && "text-white",
                       !isEqual(day, selectedDay) &&
                         isToday(day) &&
                         "text-black font-black",
