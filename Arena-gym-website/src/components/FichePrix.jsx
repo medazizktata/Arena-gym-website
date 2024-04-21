@@ -17,7 +17,7 @@ const SubscriptionBox = ({
   isSelected,
   handleSelection,
 }) => {
-  useEffect(() => {
+  /* useEffect(() => {
     if (isSelected) {
       console.log("Selected Box Props:", {
         type,
@@ -32,7 +32,7 @@ const SubscriptionBox = ({
         isSelected,
       });
     }
-  }, [isSelected, type, packName, price, duration, items, svgIcon, link, width, height]);
+  }, [isSelected, type, packName, price, duration, items, svgIcon, link, width, height]); */
 
 
   /*   const [isSelected, setIsSelected] = useState(false);
