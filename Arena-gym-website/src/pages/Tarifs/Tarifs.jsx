@@ -7,6 +7,8 @@ import DynamicSVGComponent from "../../components/DynamicIcon";
 import { getColor } from "../../utils/getColor";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
 import { Link } from "react-router-dom";
+import FilterButton from "../../components/Buttons/FilterButton";
+import SmallCard from "../../components/SmallCard";
 
 function Tarifs() {
   const [isAnnual, setIsAnnual] = useState(false);
@@ -346,7 +348,6 @@ function Tarifs() {
           </ButtonYellow>
         </Link>
       </div>
-
       <div className="scale-90">
         <AppSection />
       </div>
