@@ -9,7 +9,7 @@ import InputField from '../../components/input';
 import Button from '../../components/Buttons/Button';
 import ButtonYellow from '../../components/Buttons/ButtonYellow';
 
-const IMCForm = () => {
+const IMCFormBedis = () => {
     const methods = useForm(); // Initialiser React Hook Form
     const { handleSubmit, watch } = methods;
     const [gaugeValue, setGaugeValue] = useState(null);
@@ -68,11 +68,6 @@ const IMCForm = () => {
         <h1 className="text-yellowMain text-4xl font-bold mb-4 text-center">CALCULER VOTRE IMC</h1>
         <p className="text-white mb-6 text-center">Calculez votre indice de masse corporel (IMC) et découvrez votre poids idéal !</p>
 
-        
-        
-          
-
-
           <div className=" mb-4" >
           <InputField name="taille" label="Taille/cm" placeholder="Ex. 180" type="number" />
         </div>
@@ -104,10 +99,4 @@ const IMCForm = () => {
 );
 };
 
-export default IMCForm;
-
-  
-
-  
-
-/* testtttt */
+export default IMCFormBedis;
