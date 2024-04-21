@@ -47,25 +47,30 @@ function Activite2() {
             </div>
 
             {/* DESCRIPTION BG */}
-            <div className="inline-block flex flex-col relative z-10 m-auto w-full">
-            <h1 className="inline text-white font-Urbanist font-black text-9xl text-center">
-                DESCRIPTION
-            </h1>
-                <div className="" style={{ transform: 'translateY(-75%)' }}>
+            <div className="m-auto text-white font-Urbanist font-black text-5xl lg:text-9xl md:text-7xl z-10 w-full text-center" style={{marginTop:'-150px'}}>
+            
+                <div className="" style={{ transform: 'translateY(60%)' }}>
                     <BackgroundText
-                    text={"DESCRIPTION"}
+                    text={"Description"}
                     strokeColor="white"
                     fontFamily={"urbanist"}
                     textSize={25}/>
                 </div>
-            
+            <h1 className="inline text-white font-Urbanist font-black text-5xl lg:text-9xl md:text-7xl  text-center">
+                DESCRIPTION
+            </h1>
             </div>
 
             {/* Description */ }
-            <div className="border-2 border-black p-4 mx-auto bg-transparent-200 shadow-cardWhite z-10" style={{border:'3px solid white' , width:"800px", height:'200px', marginTop:'-100px'}} >
-                <p className="text-base leading-relaxed text-justify text-white" style={{ fontSize: "22px", fontWeight: 600}}>
-                    Le RPM est une activité sportive dynamique et énergique qui se pratique sur un vélo stationnaire, en suivant le rythme de la musique. C'est un entraînement cardiovasculaire complet qui améliore la condition physique et brûle des calories.
-                </p>
+            <div className="z-10" >
+            <CustomizableTextBox
+        className={"m-auto my-16 text-center"}
+        size="70%"
+        text={
+          "Le RPM est une activité sportive dynamique et énergique qui se pratique sur un vélo stationnaire, en suivant le rythme de la musique. C'est un entraînement cardiovasculaire complet qui améliore la condition physique et brûle des calories."
+        }
+        textColor={"text-white"}
+      />
             </div>
 
             </div>
@@ -75,59 +80,58 @@ function Activite2() {
             
 
             {/* Rectangles */}
-            <div className="mt-20 flex flex-row space-around justify-content align-items ">
-        <CustomizableTextBox
-          className="mx-20 text-blackBG"
-          size="33%"
-          text={`<div class="mx-10 flex flex-col gap-5 justify-content align-items">
-              <div>
-                  <span class="font-mosk font-black">Horaires</span>
-              </div>
-              <div class="flex flex-col gap-2 font-robotoCon">
-                  <span>Lundi 15h</span>
-                  <span>Mercredi 16h</span>
-              </div>
-          </div>`}
-          color="bg-white"
-          shadow="shadow-cardGreyMedium"
-          textColor={"text-black"}
-        />
-        <CustomizableTextBox
-          className="mx-20 text-blackBG"
-          size="33%"
-          text={`<div class="mx-10 flex flex-col gap-5 justify-content align-items">
-              <div>
-                  <span class="font-mosk font-black">Cardio Strength</span>
-              </div>
-              <div class="flex flex-col gap-2 font-robotoCon">
-                  <span>(+216) 71 88 96 58</span>
-                  <span>(+216) 58 88 38 83</span>
-              </div>
-          </div>`}
-          color="bg-yellowMain"
-          shadow="shadow-cardGreyMedium"
-        />
-        <CustomizableTextBox
-          className="mx-20 text-black"
-          size="33%"
-          text={`<div class="mx-10 flex flex-col gap-5 justify-content align-items">
-              <div>
-                  <span class="font-mosk font-black">Recommandations</span>
-              </div>
-              <div class="flex flex-col gap-2 font-robotoCon">
-                  <span>Colisée Soula | Esc D | 1er étage </span>
-                  <span>2092 El Manar 2</span>
-              </div>
-          </div>`}
-          color="bg-white"
-          shadow="shadow-cardGreyMedium"
-          textColor={"text-black"}
-        />
+            <div className="w-full flex flex-col gap-1 justify-center items-center z-10 scale-90 md:flex-row" style={{ display: 'flex', justifyContent: 'space-between' }}>
+            
+            <div className="border-2 border-black p-4 mx-auto bg-white shadow-cardGreyMedium z-10" style={{border:'3px solid white' , width:"75%", marginTop:'50px', marginLeft:'5%', marginRight:'5%', height:'100%' }} >
+                <p className="text-base leading-relaxed text-justify text-black font-mosk text-4xl lg:text-4xl md:text-4xl sm:text-3xl" style={{ fontSize: "30px", fontWeight: 700}}>
+                    Horraire: </p>
+
+                    <p className="text-base leading-relaxed text-justify text-black font-mosk" style={{ fontSize: "22px", fontWeight: 600}}>
+                    Lundi : 15h </p> 
+                    <p className="text-base leading-relaxed text-justify text-black font-mosk" style={{ fontSize: "22px", fontWeight: 600}}>
+                    Mercredi : 15h </p>    
+            </div>
+
+
+
+
+
+
+        <div className="border-2 border-black p-4 mx-auto bg-yellowMain shadow-cardGreyMedium z-10" style={{border:'3px solid white' , width:"75%", marginTop:'50px', marginLeft:'5%', marginRight:'5%', height:'100%'}} >
+                <p className="text-base leading-relaxed text-justify text-black font-mosk text-4xl lg:text-4xl md:text-4xl sm:text-3xl" style={{ fontSize: "30px", fontWeight: 700}}>
+                    Strength Cardio: </p>
+
+                    <p className="text-base leading-relaxed  text-black font-mosk" style={{ fontSize: "18px", fontWeight: 600}}>
+                    Amélioration de la santé cardiovasculaire. </p> 
+
+                    <p className="text-base leading-relaxed  text-black font-mosk" style={{ fontSize: "18px", fontWeight: 600}}>
+                    Brûlage de calories et perte de poids.</p> 
+
+                    <p className="text-base leading-relaxed  text-black font-mosk" style={{ fontSize: "18px", fontWeight: 600}}>
+                    Amélioration de l'endurance. </p> 
+
+                       
+            </div>
+
+
+
+
+            <div className="border-2 border-black p-4 mx-auto bg-white shadow-cardGreyMedium z-10" style={{border:'3px solid white' , width:"75%", marginTop:'50px' , marginLeft: '5%', marginRight:'5%', height:'100%'}} >
+                <p className="text-base leading-relaxed text-justify text-black font-mosk text-4xl lg:text-4xl md:text-4xl sm:text-3xl" style={{fontWeight: 700}}>
+                    Recommandations: </p>
+
+                    <p className="text-base leading-relaxed text-justify text-black font-mosk" style={{ fontSize: "18px", fontWeight: 600}}>
+                    Restez hydraté:  Buvez de l'eau avant, pendant et après la séance pour éviter la déshydratation. </p> 
+
+                    
+
+                       
+            </div>
       </div>
 
 
       {/* COACHES BG */}
-      <div className="inline-block flex flex-col relative z-10 m-auto w-full" style={{marginTop:'-200px'}}>
+      <div className="m-auto text-white font-Urbanist font-black text-5xl lg:text-9xl md:text-7xl  text-center" style={{marginTop:'-75px'}}>
             
                 <div className="" style={{ transform: 'translateY(60%)' }}>
                     <BackgroundText
@@ -136,13 +140,13 @@ function Activite2() {
                     fontFamily={"urbanist"}
                     textSize={25}/>
                 </div>
-            <h1 className="inline text-white font-Urbanist font-black text-9xl text-center">
+            <h1 className="inline text-white font-Urbanist font-black text-5xl lg:text-9xl md:text-7xl  text-center">
                 COACHES
             </h1>
             </div>
 
         {/* Coaches cards */}
-        <div className="relative z-10 mt-20" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginLeft:'300px', marginRight: '300px' }}>
+        <div className="flex flex-col gap-1 justify-center items-center z-10 scale-90 md:flex-row" style={{ marginLeft:'20%', marginRight:'20%', display: 'flex', justifyContent: 'space-between' }}>
           <CoachCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='Mounir' />
           <CoachCard img='images/1000_F_524378456_7iH4roEgy8t8351zKypjRumlIbRfwhIO.jpg' nom='Neji' />
         </div>
@@ -152,7 +156,7 @@ function Activite2() {
         
         <div className="mb-10 relative z-15 " >
 
-        <p className="text-white" style={{ fontFamily: "Roboto Condensed", fontSize: "50px", fontWeight: 600, marginLeft:'200px', marginTop:'100px', marginBottom : '-100px'}}>Vous êtes peut-être intéressé par...</p>
+        <p className="text-white text-3xl lg:text-4xl md:text-4xl sm:text-3xl" style={{ fontFamily: "Roboto Condensed", fontWeight: 600, marginLeft:'10%', marginTop:'50px', marginBottom : '0px' }}>Vous êtes peut-être intéressé par...</p>
 
 
             <div className="absolute z-1 w-full top-1/2 transform -translate-y-1/2 opacity-50 flex flex-col justify-between" style={{transform : 'translateY(-70%)'}}>
@@ -167,11 +171,11 @@ function Activite2() {
                     />
     
                 </div>
-                <div className="relative z-10 mt-20 scale-90" style={{ display: 'flex', justifyContent: 'space-between', marginTop:'200px' }}>
-                    <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='Body Building' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
-                    <ActivityCard img='images/1000_F_524378456_7iH4roEgy8t8351zKypjRumlIbRfwhIO.jpg' nom='RPM' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
-                    <ActivityCard img='images/dumbbells-gym-64a3f4bc2fe31.jpg' nom='Fitness' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
-                </div>
+                <div className="flex flex-col gap-1 justify-center items-center z-10 scale-90 md:flex-row" style={{ marginLeft:'10%', marginRight:'10%', display: 'flex', justifyContent: 'space-between' }}>
+            <ActivityCard img='images/gym-workout-plan-for-gaining-muscle_header.jpg' nom='Body Building' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
+            <ActivityCard img='images/1000_F_524378456_7iH4roEgy8t8351zKypjRumlIbRfwhIO.jpg' nom='RPM' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
+            <ActivityCard img='images/dumbbells-gym-64a3f4bc2fe31.jpg' nom='Fitness' icon='images/6dcc2d2ac756fe47587fd2be39913e47-removebg-preview.png' />
+        </div>
 
 
         </div>

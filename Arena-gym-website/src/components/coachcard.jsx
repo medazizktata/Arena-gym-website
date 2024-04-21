@@ -17,7 +17,7 @@ const CoachCard = ({ img, nom }) => {
       className="relative overflow-hidden"
       onMouseEnter={handleHover}
       onMouseLeave={handleLeave}
-      style={{ width: '350px', height: '350px', borderRadius: '50%' }}
+      style={{ width: '300px', height: '300px', borderRadius: '50%' }}
     >
       <div
         className={` absolute inset-0`}
@@ -44,7 +44,7 @@ const CoachCard = ({ img, nom }) => {
                 href="#"
                 className="group hover:text-white transition duration-300"
               >
-                <span className="block text-3xl" style={{bottom:'80px'}}>Consulter Coach</span>
+                <span className="block text-3xl" style={{marginBottom:'0px'}}>Consulter Coach</span>
                 <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
               </a>
             </p>

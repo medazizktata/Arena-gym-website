@@ -8,6 +8,9 @@ import ErrorPage from "./utils/ErrorPage";
 import Galerie from "./pages/Gallery/Galerie";
 import About from "./pages/About/About";
 import BelowFooter from "./components/BelowFooter.jsx";
+import Activite from "./pages/activités/activité1.jsx";
+import Activite2 from "./pages/activités/activité2.jsx";
+import Appact from "./components/CarrouselActivités.jsx";
 
 function App() {
   return (
@@ -27,7 +30,7 @@ function App() {
         />
         <Route
           path="/activites"
-          element={<Home />}
+          element={<Activite2 />}
           errorElement={<ErrorPage />}
         />
         <Route

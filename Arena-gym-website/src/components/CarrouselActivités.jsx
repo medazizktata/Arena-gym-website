@@ -29,7 +29,7 @@ function Appact() {
   };
 
   return (
-    <div className='w-3/4 m-auto'>
+    <div className='w-3/4 m-auto' style={{marginTop:'-350px'}}>
       <div className='mt-20 relative'>
         <Slider ref={sliderRef} {...settings}>
           {data.map((d, index) => (
