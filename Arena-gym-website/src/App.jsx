@@ -21,7 +21,7 @@ function App() {
           <Route
             exact 
             path="/"
-            element={<Tarifs/>}
+            element={<Home/>}
             errorElement={<ErrorPage />}
           />
 
