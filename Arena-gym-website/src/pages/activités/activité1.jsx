@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import { getColor } from "../../utils/getColor";
 import CustomizableTextBox from "../../components/CustomizableTextBox";
 import ButtonBlack from "../../components/Buttons/ButtonBlack";
-import ActivityCard from "../../components/activitycard";
+import ActivityCard from "../../components/ActivityCard";
 import Pagination from "../../components/Pagination";
 import BackgroundText from "../../components/BackgroundText";
 import DropdownField from "../../components/input_2";
@@ -15,7 +15,6 @@ function Activite() {
   const options = ["Choose Option", "Weight Loss", "Body Building", "Cross Fit", "Dance" ];
   return (
     <div>
-      <Navbar />
       
       <div className="relative min-h-screen flex flex-col items-start">
         <div className="absolute inset-0 w-full h-full z-10">
