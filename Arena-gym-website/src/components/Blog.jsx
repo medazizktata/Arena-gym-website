@@ -1,13 +1,15 @@
 import React from 'react';
-import imageBlog from '../assets/Img/imageBlog.jpg';
+import { Link } from 'react-router-dom';
+import BlogPage from "../pages/Bolgs/SingleBlog.jsx";
 
 function BlogPost({ title, img, content }) {
   return (
-    <div className="bg-blackBG container mx-auto px-4 py-4 w-1/4">
+    <div className="bg-blackBG container mx-auto md:px-20 py-3 lg:w-[600px] w-[330px] sm:px-2">
       <div className="relative overflow-hidden group">
-        <img className="h-48 w-full object-cover mb-2 transition duration-300 transform group-hover:brightness-50" src={img} alt="Blog Post Image" />
+      
+         <img className="h-48 w-full object-cover mb-2 transition duration-300 transform group-hover:brightness-50" src={img} alt="Blog Post Image" /> 
         <div className="absolute inset-0 flex items-center justify-center bg-yellowBetter bg-opacity-70 transition-transform transform translate-y-full group-hover:translate-y-0">
-          <h1 className="text-black text-xl font-bold">Voir plus</h1>
+        <Link to="/BlogPage"> <h1 className="text-black text-xl font-bold">Voir plus</h1> </Link>
         </div>
       </div>
 

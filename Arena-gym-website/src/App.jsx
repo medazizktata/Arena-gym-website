@@ -8,15 +8,17 @@ import ErrorPage from "./utils/ErrorPage";
 import Galerie from "./pages/Gallery/Galerie";
 import About from "./pages/About/About";
 import BelowFooter from "./components/BelowFooter.jsx";
-import Footer from './components/Footer.jsx'
-import BlogPage from "./pages/Bolg/BlogPage.jsx";
-import BlogPostContainer from './pages/Bolg/Blogs.jsx'
+import Footer from './components/Footer.jsx';
+import Coach from './pages/coach.jsx';
+import BlogPostContainer from './pages/Bolgs/Blogs.jsx'
+
 
 function App() {
   return (
     <>
       <Navbar/>
       <Routes>
+      
         <Route exact path="/" element={<Home />} errorElement={<ErrorPage />} />
         <Route
           path="/inscription"
@@ -35,10 +37,10 @@ function App() {
         />
         <Route
           path="/coaches"
-          element={<Home />}
+          element={<Coach />}
           errorElement={<ErrorPage />}
         />
-        <Route path="/blog" element={<BlogPage/>} errorElement={<ErrorPage />} />
+        <Route path="/blog" element={<BlogPostContainer/>} errorElement={<ErrorPage />} />
         <Route path="/tarifs" element={<Home />} errorElement={<ErrorPage />} />
         <Route
           path="/planning"
@@ -51,11 +53,9 @@ function App() {
           errorElement={<ErrorPage />}
         />
         <Route path="/about" element={<About />} errorElement={<ErrorPage />} />
-        <Route element={<ErrorPage />} />
+        <Route element={<ErrorPage/>} />
       </Routes>
-      <div className="mt-40">
       <Footer/>
-      </div>
       <BelowFooter/>
     </>
   );
