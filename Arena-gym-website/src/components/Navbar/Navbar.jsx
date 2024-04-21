@@ -33,7 +33,7 @@ function Navbar() {
       <div className="fixed top-0 left-0 w-full z-50">
         <div
           className={`flex justify-between px-10 py-5 mx-auto text-white ${
-            navbarBackground ? "bg-blackBG" : "bg-transparent"
+            navbarBackground ? "bg-blackBG" : "bg-blackBG"
           } transition-all duration-900`}
         >
           <div className="inline-flex items-center text-center w-40 hover:text-yellowMain transition duration-500 cursor-pointer">
