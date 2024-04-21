@@ -48,7 +48,7 @@ const ContactForm = () => {
             <ButtonYellow
               buttonType={"submit"}
               buttonFont="font-bold"
-              paddingX="4"
+              paddingX={3}
               fontWeight={"w-full"}
             >
               Envoyer
