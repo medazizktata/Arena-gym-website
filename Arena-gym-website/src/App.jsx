@@ -11,6 +11,8 @@ import About from "./pages/About/About";
 import BelowFooter from "./components/BelowFooter.jsx";
 import GalerieV2 from "./pages/Gallery/Galeriev2.jsx";
 import Planning from "./pages/Planning/Planning.jsx";
+import { PageEntraineurs } from "./pages/Coachs/PageEntraineurs.jsx";
+import { PageApplication } from "./pages/Application/PageApplication.jsx";
 
 function App() {
   return (
@@ -42,7 +44,7 @@ function App() {
           />
           <Route
             path="/coaches"
-            element={<Home />}
+            element={<PageEntraineurs />}
             errorElement={<ErrorPage />}
           />
           <Route path="/blog" element={<Home />} errorElement={<ErrorPage />} />
@@ -64,6 +66,11 @@ function App() {
           <Route
             path="/about"
             element={<About />}
+            errorElement={<ErrorPage />}
+          />
+          <Route
+            path="/PageApplication"
+            element={<PageApplication />}
             errorElement={<ErrorPage />}
           />
         </Routes>
