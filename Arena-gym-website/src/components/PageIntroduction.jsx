@@ -8,7 +8,7 @@ function PageIntroduction({
   title,
   titleProps = "text-white text-center",
   subTitle = "",
-  subTitleProps = "text-white text-center",
+  subTitleProps = "text-white text-center sm:text-4xl",
 }) {
   const translateValue = 30 - BGText.length * 0.5;
 
@@ -39,7 +39,7 @@ function PageIntroduction({
           >
             {title}
           </h1>
-          <h2 className={`text-lg sm:text-4xl ${subTitleProps}`}>
+          <h2 className={`text-lg  ${subTitleProps}`}>
             {subTitle}
           </h2>
         </div>
