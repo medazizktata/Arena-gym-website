@@ -14,6 +14,9 @@ import Planning from "./pages/Planning/Planning.jsx";
 import Footer from "./components/Footer.jsx";
 import BlogPostContainer from "./pages/Blog/Blogs.jsx";
 import ChoisirSalle from "./pages/ChoisirSalle/ChoisirSalle.jsx";
+import Activite from "./pages/activités/activité1.jsx";
+import ActiviteInd from "./pages/activités/ActiviteInd.jsx";
+import { PageEntraineurs } from "./pages/Coaches/PageEntraineurs.jsx";
 
 function App() {
   return (
@@ -55,12 +58,12 @@ function App() {
             />
             <Route
               path="/activites"
-              element={<Home />}
+              element={<ActiviteInd />}
               errorElement={<ErrorPage />}
             />
             <Route
               path="/coaches"
-              element={<Home />}
+              element={<PageEntraineurs />}
               errorElement={<ErrorPage />}
             />
             <Route
