@@ -6,7 +6,15 @@ import { getColor } from "../../utils/getColor";
 import CustomizableTextBox from "../../components/CustomizableTextBox";
 import ButtonBlack from "../../components/Buttons/ButtonBlack";
 import PageIntroduction from "../../components/PageIntroduction";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import SubscriptionBox from "../../components/FichePrix";
+
 function Inscription() {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const serializedData = params.get("data");
+  const data = JSON.parse(decodeURIComponent(serializedData));
   return (
     <div>
       <PageIntroduction
@@ -21,7 +29,7 @@ function Inscription() {
             <span className="left-0 text-white font-urbanist font-black text-4xl md:text-5xl lg:text-6xl pb-10">
               PACK CHOISI
             </span>
-            <SubscriptionBox2
+            {/* <SubscriptionBox2
               packName="PACK 2"
               type={1}
               price="560"
@@ -51,7 +59,8 @@ function Inscription() {
                 </svg>
               }
               offer="hidden"
-            />
+            /> */}
+            <SubscriptionBox {...data}/>
           </div>
           <div className="inline">
             <img
@@ -63,13 +72,18 @@ function Inscription() {
           </div>
         </div>
         <div className="text-lg w-full flex justify-center my-5">
-          <ButtonBlack
-            buttonFont="font-robotoCon"
-            paddingX="20"
-            fontWeight="font-bold"
+          <Link
+            to="/tarifs"
+            className="group hover:text-yellowMain transition duration-300"
           >
-            Changer d'offre
-          </ButtonBlack>
+            <ButtonBlack
+              buttonFont="font-robotoCon"
+              paddingX="20"
+              fontWeight="font-bold"
+            >
+              Changer d'offre
+            </ButtonBlack>
+          </Link>
         </div>
       </div>
       <div className="my-10">
