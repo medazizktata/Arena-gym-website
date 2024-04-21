@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ImageHover from "./ImageHover";
-import SearchBar from "./SearchBar"
 
 
 

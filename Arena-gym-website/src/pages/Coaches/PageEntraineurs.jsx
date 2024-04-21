@@ -1,6 +1,5 @@
 import React from "react";
 import HeadEntraineurs from "../../components/HeadEntraineurs";
-import SearchBar from "../../components/SearchBar";
 import ContentEntraineurs from "../../components/ContentEntraineurs";
 import SearchBox from "../../components/SearchBox";
 
