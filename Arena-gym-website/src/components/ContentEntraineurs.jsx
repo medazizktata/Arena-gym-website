@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CoachCode from "../pages/Coachs/CoachCode";
+import CoachCode from "../pages/Coaches/CoachCode";
 
 
 function ContentEntraineurs() {
