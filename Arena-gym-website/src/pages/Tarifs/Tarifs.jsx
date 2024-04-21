@@ -12,20 +12,20 @@ function Tarifs() {
   const [isAnnual, setIsAnnual] = useState(false);
 
   const [selectedBoxIndex, setSelectedBoxIndex] = useState(null);
+  const [selectedBoxData, setSelectedBoxData] = useState(null);
 
   const handleSelection = (index) => {
     if (index === selectedBoxIndex) {
       // If the clicked box is already selected, deselect it
       setSelectedBoxIndex(null);
-      console.log("De-Clicked" + index);
-
+      setSelectedBoxData(null);
     } else {
-      // Otherwise, select the clicked box
+      // Otherwise, select the clicked box and capture its data
       setSelectedBoxIndex(index);
-      console.log("Clicked" + index);
-
+      setSelectedBoxData(currentPacksData[index]);
     }
   };
+
   const monthlyPacksData = [
     {
       type: "type2",
@@ -260,15 +260,15 @@ function Tarifs() {
         imgSrc={"src/assets/Images/Tarifs/Secret-8 1.png"}
         title={"Tarifs"}
         subTitle="Nos Packs"
-        titleProps="text-9xl text-white text-center"
-        subTitleProps="text-9xl my-5 text-white text-center"
+        titleProps="my-5 max-sm:text-7xl max-md:text-8xl text-9xl text-white text-center"
+        subTitleProps="max-sm:text-4xl max-md:text-6xl md:text-6xl text-white text-center"
       />
-      <h3 className="my-6 mb-10 text-white text-2xl lg:text-4xl text-urbanist text-center w-[80%] mx-auto">
+      <h3 className="mb-6 text-white text-2xl lg:text-4xl text-urbanist text-center w-[80%] mx-auto">
         Explorez nos offres exclusives, choisissez celle qui vous convient, puis
         inscrivez-vous en un clic.
       </h3>
-      <div className="flex justify-center items-center my-10 mb-2 font-robotoCon font-bold text-xl">
-        <div className="inline-flex border-2 border-white shadow-cardSmallGreyMedium hover:shadow-cardYellowMain hover:border-yellowMain cursor-pointer transition all duration 500">
+      <div className="mx-40 flex justify-center my-10 mb-2 font-robotoCon font-bold text-xl">
+        <div className=" flex justify-center lg:flex-row max-md:flex-row max-sm:flex-col items-center border-2 border-white shadow-cardSmallGreyMedium hover:shadow-cardYellowMain hover:border-yellowMain cursor-pointer transition-all duration-500 sm:flex-col md:flex-col">
           <button
             onClick={() => setIsAnnual(false)}
             className={`px-6 py-2 my-1 mx-1 ${
@@ -287,20 +287,55 @@ function Tarifs() {
           </button>
         </div>
       </div>
+
       <div className="my-10 lg:mx-20 md:mx-10 mt-20 px-20 bg-backgroundPattern">
         <div className="grid gap-4 lg:grid-cols-2 xl:grid-cols-4 sm:gap-8 md:gap-6 lg:gap-10 justify-center items-center">
           {currentPacksData.map((pack, index) => (
-            <SubscriptionBox key={index} {...pack} 
-            isSelected={index === selectedBoxIndex}
-            handleSelection={() => handleSelection(index)}
+            <SubscriptionBox
+              key={index}
+              {...pack}
+              isSelected={index === selectedBoxIndex}
+              handleSelection={() => handleSelection(index)}
             />
           ))}
         </div>
       </div>
-      <div className="my-16 flex justify-center">
+      {/* {selectedBoxData && (
+        <div className="text-white">
+          <h2>Selected Box Data:</h2>
+          <p>Type: {selectedBoxData.type}</p>
+          <p>Pack Name: {selectedBoxData.packName}</p>
+          <p>Price: {selectedBoxData.price}</p>
+          <p>Duration: {selectedBoxData.duration}</p>
+          <p>Items:</p>
+          <ul>
+            {selectedBoxData.items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+          <p>SVG Icon: {selectedBoxData.svgIcon}</p>
+          <p>Link: {selectedBoxData.link}</p>
+          <p>Width: {selectedBoxData.width}</p>
+          <p>Height: {selectedBoxData.height}</p>
+        </div>
+      )} */}
+      <div className="my-10 flex flex-col gap-5 justify-center items-center">
+        {!selectedBoxData && (
+          <p className="font-urbanist text-red-500">
+            Veuillez sélectionner une option ci-dessus.
+          </p>
+        )}
         <Link
-          to="/inscription"
-          className="group hover:text-yellowMain transition duration-300"
+          to={
+            selectedBoxData
+              ? `/inscription?data=${encodeURIComponent(
+                  JSON.stringify(selectedBoxData)
+                )}`
+              : "#"
+          }
+          className={`group hover:text-yellowMain transition duration-300 ${
+            !selectedBoxData ? "pointer-events-none opacity-50" : ""
+          }`}
         >
           <ButtonYellow
             buttonFont="font-robotoCon uppercase"
@@ -311,6 +346,7 @@ function Tarifs() {
           </ButtonYellow>
         </Link>
       </div>
+
       <div className="scale-90">
         <AppSection />
       </div>
