@@ -88,16 +88,11 @@ function App() {
               element={<About />}
               errorElement={<ErrorPage />}
             />
-            <Route
-              path="/inscription"
-              element={<Inscription />}
-              errorElement={<ErrorPage />}
-            />
           </Routes>
         </div>
         <div className="mt-60 w-full bottom-0 mx-auto">
-          <Footer />
-          <BelowFooter />
+          {/* <Footer />
+          <BelowFooter /> */}
         </div>
       </div>
     </>
