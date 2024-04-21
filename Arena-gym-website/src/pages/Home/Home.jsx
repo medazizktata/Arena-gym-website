@@ -5,31 +5,29 @@ import ActivitiesSection from "./ActivitiesSection";
 import CoachesSection from "./CoachesSection";
 import AppSection from "./AppSection";
 import BelowFooter from "../../components/BelowFooter";
-import SponsorsCarousel from "./SponsorsCarousel";
-import SponsorsSection from "./SponsorsSection";
+import SponsorsCarousel from "./SponsorsSection/SponsorsCarousel";
+import SponsorsSection from "./SponsorsSection/SponsorsSection";
 import MapCard from "../../components/MapCard";
 import MapSection from "./MapSection";
-import ContactForm from "./form_com";
-import IMCForm from "./form_imc";
+import Appact from "../../components/CarrouselActivités";
+import Appcoaches from "../../components/CarrouselCoaches";
+import IMCForm from "./FormIMC";
+import IMCSection from "./IMCSection";
+import ContactSection from "./ContactSection";
+import CalendarSection from "./CalendarSection/CalendarSection";
+
 function Home() {
   return (
     <>
-      <Navbar />
       <HeroSection />
-      <ActivitiesSection/>
-      <CoachesSection/>
-      <AppSection/>
-      <MapSection/>
-
-      <IMCForm/>
-      <ContactForm/>
-
-      
-      <SponsorsSection/>
-
-
-
-      
+      <ActivitiesSection />
+      <CoachesSection />
+      <IMCSection/>
+      <CalendarSection/>
+      <AppSection />
+      <MapSection />
+      <ContactSection/>
+      <SponsorsSection />
     </>
   );
 }

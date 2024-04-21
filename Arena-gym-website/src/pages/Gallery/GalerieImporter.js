@@ -15,7 +15,7 @@ const GalerieImporter = () => {
           const module = await imageModules[path]();
           const img = new Image();
           img.src = module.default;
-          await img.decode(); // Ensure the image is fully loaded before extracting dimensions
+          await img.decode();
           return { src: module.default, width: img.width, height: img.height };
         })
       );
