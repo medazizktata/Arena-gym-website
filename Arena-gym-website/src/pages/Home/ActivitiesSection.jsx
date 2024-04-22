@@ -7,7 +7,7 @@ function ActivitiesSection() {
   return (
     <>
       <div className="my-20 relative">
-        <h2 className="font-urbanist ml-[10%] font-bold text-white text-3xl relative z-10">
+        <h2 className="font-urbanist ml-[10%] my-20 font-bold text-white text-6xl relative z-10">
           Découvrez nos activités
         </h2>
         <BackgroundText
@@ -17,7 +17,9 @@ function ActivitiesSection() {
           strokeColor={"white"}
           textSize={20}
         />
-        <Appact />
+        <div className="my-20">
+          <Appact />
+        </div>
       </div>
 
       <div className="flex flex-col justify-center items-center text-lg">
