@@ -127,16 +127,16 @@ function Footer() {
 
             <div className='flex flex-row items-center gap-12 md:gap-4'>
                 <a href="#" className="mb-4 md:mb-0">
-                    <img className="" src="src/assets/Img/instawhite.png" alt="Instagram" />
+                    <img className="h-11" src="src/assets/Img/instawhite.png" alt="Instagram" />
                 </a>
-
-                <a href="#" className="mb-4 md:mb-0">
-                    <img className="" src="src/assets/Img/icons8-twitterx-43.png" alt="X" />
-                </a>
-
                 <a href="#" className="mb-4 md:mb-0">
                     <img className="" src="src/assets/Img/icons8-facebook-44.png" alt="Facebook" />
                 </a>
+                <a href="#" className="mb-4 md:mb-0">
+                    <img className="h-[45.9px]" src="src/assets/Img/icons8-twitterx-43.png" alt="X" />
+                </a>
+
+                
             </div>
 
             <div className='lg:mt-20'>
