@@ -11,7 +11,7 @@ function ButtonWhite({ children, buttonFont, paddingX, fontWeight, buttonType })
       padding={paddingX}
       transparentBorder={1}
       typeB={buttonType}
-      className={`${fontWeight} border border-1 border-transparent shadow-buttonblackBG hover:border-yellowMain transition-all duration-500 hover:shadow-buttonYellowLight transition-all duration-500`}
+      className={`${fontWeight} border border-2 border-transparent shadow-buttonblackBG hover:border-yellowMain transition-all duration-500 hover:shadow-buttonblackBG transition-all duration-500`}
     >
       {children}
     </Button>
