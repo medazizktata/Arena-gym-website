@@ -15,7 +15,7 @@ import IMCForm from "./FormIMC";
 import IMCSection from "./IMCSection";
 import ContactSection from "./ContactSection";
 import CalendarSection from "./CalendarSection/CalendarSection";
-
+import BlogHome from "./BlogSection/blogsection";
 function Home() {
   return (
     <>
@@ -24,6 +24,7 @@ function Home() {
       <CoachesSection />
       <IMCSection/>
       <CalendarSection/>
+      <BlogHome/>
       <AppSection />
       <MapSection />
       <ContactSection/>
