@@ -53,19 +53,19 @@ function Appact() {
                   }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 rounded-md"></div>
-                  <div className="absolute inset-0 flex flex-col justify-center items-center">
-                    <p className="text-white text-center z-10 font-black text-2xl absolute bottom-20 py-2">
+                  <div className="mx-10 absolute inset-0 flex flex-col justify-center items-center">
+                    <p className="text-white text-center z-10 font-black text-3xl py-2">
                       {d.name}
                     </p>
 
                     <div className="absolute bottom-5 z-10">
                       <ButtonWhite
                         buttonFont="font-robotoCon"
-                        fontWeight="font-black hover:scale-105"
-                        paddingX={20}
+                        fontWeight="w-full text-sm md:text-base lg:text-lg px-5 lg:px-20 md:px-12 font-black"
                       >
                         Voir classe
                       </ButtonWhite>
+
                     </div>
                   </div>
                 </div>
