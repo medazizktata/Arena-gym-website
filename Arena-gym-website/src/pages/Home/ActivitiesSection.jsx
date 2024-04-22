@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import BackgroundText from "../../components/BackgroundText";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
 import Appact from "../../components/CarrouselActivités";
@@ -16,17 +17,19 @@ function ActivitiesSection() {
           strokeColor={"white"}
           textSize={20}
         />
-        <Appact/>
+        <Appact />
       </div>
 
       <div className="flex flex-col justify-center items-center text-lg">
-        <ButtonYellow
-          buttonFont="font-robotoCon"
-          fontWeight="font-black hover:scale-105"
-          paddingX={10}
-        >
-          Voir nos Activités
-        </ButtonYellow>
+        <Link to={"/activites"}>
+          <ButtonYellow
+            buttonFont="font-robotoCon"
+            fontWeight="font-black hover:scale-105"
+            paddingX={10}
+          >
+            Voir nos Activités
+          </ButtonYellow>
+        </Link>
       </div>
     </>
   );
