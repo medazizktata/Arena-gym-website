@@ -11,26 +11,30 @@ import { Link } from "react-router-dom";
 function HeroSection() {
   return (
     <>
-      <div className="mb-15">
+      <div className="">
         <div
           className="w-full"
           style={{
             background: `linear-gradient(to top, ${getColor(
               "yellowMain"
-            )}, rgba(255, 204, 0, 0))`,
+            )} 0%, ${getColor("blackBG")} 90%, rgba(0, 0, 0, 0) 100%)`,
           }}
         >
-          <div className="relative mx-auto mx-[2%]">
-            <div className="inline absolute inset-x-0 top-40 transform translate-y-1/4 flex flex-col items-center text-white z-10 px-8 text-lg">
-              <div className="inline text-6xl font-Gentona uppercase text-center mb-8 flex flex-col">
-                <h1 className="inline text-9xl font-black">Arena Gym</h1>
-                <h2 className="inline text-7xl font-black">We are limitless</h2>
+          <div className="relative mx-auto mx-[25px]">
+            <div className="absolute my-40 inset-0 inline-flex flex-col items-center justify-center text-white z-10 mx-20 max-sm:mx-5 text-lg">
+              <div className="inline font-Gentona uppercase text-center mb-8 flex flex-col gap-2">
+                <h1 className="inline lg:text-9xl md:text-8xl max-sm:text-7xl sm:text-7xl font-black">
+                  Arena Gym
+                </h1>
+                <h2 className="inline lg:text-7xl md:text-5xl max-sm:text-4xl sm:text-4xl font-black">
+                  We are limitless
+                </h2>
               </div>
-              <span className="inline font-roboto text-lg text-center mb-8">
+              <span className="inline font-roboto lg:text-2xl md:text-xl max-sm:text-sm sm:text-base mx-20 text-center mb-8">
                 Arena Gym est une salle de sport couvrant un espace de 2500m²
                 unique avec sa répartition Indoor et Out-door.
               </span>
-              <div className="inline flex flex-row gap-10">
+              <div className="inline flex flex-row gap-10 md:text-2xl sm:text-xl max-sm:gap-2 max-sm:flex-col-reverse ">
                 <ButtonYellow
                   buttonFont="font-robotoCon"
                   fontWeight="font-black scale-90"
@@ -46,61 +50,68 @@ function HeroSection() {
                   Voir la galerie
                 </ButtonYellow> */}
 
-                <a href="#">
+                <Link to={"/galerie"}>
                   <ConsulterGalerieButton
                     className={
-                      "hover:text-yellowMain transition duration-500 cursor-pointer"
+                      "text-xl hover:text-yellowMain transition duration-500 cursor-pointer"
                     }
                   />
-                </a>
+                </Link>
               </div>
             </div>
-            <div className="pb-16">
+            <div className="pb-10 lg:pb-20 md:pb-16">
               <BigCaroussel />
             </div>
           </div>
         </div>
-        <div className="bg-yellowMain h-64 w-full bottom-0">
-          <h1 className="flex flex-col gap-10 justify-center items-center font-robotoCon uppercase text-center text-7xl font-bold">
-            <hr className="border-b-8 border-blackBG w-1/4" />
-            <span>Abonnements qui alimentent</span>
-            <span>votre forme physique!</span>
+        <div className="bg-yellowMain lg:h-64 w-full bottom-0 font-robotoCon">
+          <h1 className="mx-10 flex flex-col gap-14 max-md:gap-10 max-sm:gap-5 justify-center items-center uppercase text-center xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl max-sm:text-3xl font-bold">
+            <hr className="border-b-8 border-blackBG w-1/2" />
+            <div className="flex flex-col gap-5">
+              <span>Abonnements qui alimentent</span>
+              <span>votre forme physique!</span>
+            </div>
           </h1>
         </div>
-        <svg
-          className="bottom-0 left-0"
-          viewBox="0 0 100 100"
-          preserveAspectRatio="none"
-          width="100%"
-          height="100"
-        >
-          <polygon points="0,0 100,0 50,100" fill={getColor("yellowMain")} />
-        </svg>
+        <div className="">
+          <svg
+            className="bottom-0 left-0"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+            width="100%"
+            height="100"
+          >
+            <polygon points="0,0 100,0 50,100" fill={getColor("yellowMain")} />
+          </svg>
+        </div>
         <div className="mx-auto">
-          <div className=" text-white text-4xl font-urbanist font-bold inline mx-[20%] my-[5%] bg-blackBG bottom-0 flex flex-row justify-between ">
-            <div className="inline flex flex-col gap-16">
-              <div className="inline flex gap-5">
-                <FaCheckCircle />
-                <span>Classes de Fitness</span>
+          <div className="text-white lg:ml-20 max-lg:ml-40 max-md:ml-20 md:mx-20 xl:text-5xl lg:text-4xl md:text-3xl sm:text-2xl max-sm:text-lg font-urbanist font-bold my-[5%] bg-blackBG bottom-0 flex justify-center max-sm:flex-col gap-5 lg:gap-20 ">
+            <div className="inline-flex flex-col justify-center gap-20 max-sm:gap-5 ">
+              <div className="inline-flex gap-2">
+                <FaCheckCircle className="max-sm:text-3xl max-md:text-4xl max-lg:text-5xl w-[60px] py-1"/>
+                <span className="inline">Classes de Fitness</span>
               </div>
-              <div className="inline flex gap-5">
-                <FaCheckCircle />
-                <span>Entrainement personnel</span>
+              <div className="inline flex gap-2 ">
+                  <FaCheckCircle className="max-sm:text-3xl max-md:text-4xl max-lg:text-5xl w-[60px] py-1"/>
+
+                <span className="inline">Entrainement personnel</span>
               </div>
             </div>
-            <div className="inline flex flex-col justify-between">
-              <div className="inline flex gap-5">
-                <FaCheckCircle />
-                <span>Quality Coaches</span>
+            <div className="inline flex flex-col justify-center gap-20 max-sm:gap-5">
+              <div className="inline flex gap-2">
+                <FaCheckCircle className="max-sm:text-3xl max-md:text-4xl max-lg:text-5xl w-[60px] py-1"/>
+
+                <span className="inline">Quality Coaches</span>
               </div>
-              <div className="inline flex gap-5">
-                <FaCheckCircle />
-                <span>Equipments haute qualité</span>
+              <div className="inline flex gap-2">
+                <FaCheckCircle className="max-sm:text-3xl max-md:text-4xl max-lg:text-5xl w-[60px] py-1"/>
+
+                <span className="inline">Equipments haute qualité</span>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center text-lg">
+        <div className="flex flex-col justify-center items-center text-xl">
           <Link to={"/tarifs"}>
             <ButtonYellow
               buttonFont="font-robotoCon"
