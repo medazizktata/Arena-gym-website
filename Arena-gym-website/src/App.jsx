@@ -58,7 +58,7 @@ function App() {
             />
             <Route
               path="/activites"
-              element={<ActiviteInd />}
+              element={<Activite />}
               errorElement={<ErrorPage />}
             />
             <Route
