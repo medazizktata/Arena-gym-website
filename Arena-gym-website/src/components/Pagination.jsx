@@ -12,9 +12,9 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
   const handleButtonHover = (pageNumber) => {
     setHoveredButton(pageNumber);
   };
+    const pageNumbers = [];
 
   const renderPageNumbers = () => {
-    const pageNumbers = [];
     for (let i = 1; i <= totalPages; i++) {
       pageNumbers.push(
         <button
@@ -39,7 +39,7 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
     }
     return pageNumbers;
   };
-  const L = [1, 2, 3, 4, 5, 6, 7];
+  const L = pageNumbers;
 
   return (
     <div className="flex justify-center items-center">
