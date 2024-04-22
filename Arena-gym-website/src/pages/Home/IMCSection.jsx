@@ -1,5 +1,6 @@
 import BackgroundText from "../../components/BackgroundText";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
+import IMCFormBedis from "./form_imc";
 import IMCForm from "./FormIMC";
 
 function IMCSection() {
@@ -24,7 +25,8 @@ function IMCSection() {
             className=""
           />
           <div className="transform translate-y-20">
-            <IMCForm />
+            {/* <IMCForm /> */}
+            <IMCFormBedis/>
           </div>
         </div>
       </div>

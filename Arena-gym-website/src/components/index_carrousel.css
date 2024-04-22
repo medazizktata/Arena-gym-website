@@ -12,8 +12,8 @@
 
 .slide {
     width: 250px;
-    height: 250px;
-    margin-top: 25px;
+    height: 300px;
+    margin-top: 50px;
     margin-left: 0px;
     margin-right: 0px;
     
@@ -21,7 +21,7 @@
 
 .slide-active {
     width: 300px;
-    height: 300px;
+    height: 400px;
     border: 3px solid #FBDE06;
     margin-left: 0px;
     margin-right: 0px;
@@ -39,7 +39,7 @@
 }
 
 .carrousel {
-    width: 1125px;
+    width: 75%;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -116,3 +116,25 @@
     transform: translateY(-50%); /* Ajustement pour centrer verticalement */
     z-index: 0;
 }
+
+/* Pour les écrans de petite taille */
+@media screen and (max-width: 640px) {
+    .carrousel {
+      width: 90%; /* Réduire la largeur du carrousel */
+    }
+  }
+  
+  /* Pour les écrans de taille moyenne */
+  @media screen and (min-width: 641px) and (max-width: 1024px) {
+    .carrousel {
+      width: 80%; /* Réduire la largeur du carrousel */
+    }
+  }
+  
+  /* Pour les écrans de grande taille */
+  @media screen and (min-width: 1025px) {
+    .carrousel {
+      width: 75%; /* Garder la largeur du carrousel */
+    }
+  }
+  

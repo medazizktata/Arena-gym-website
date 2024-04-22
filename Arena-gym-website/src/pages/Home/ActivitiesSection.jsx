@@ -1,5 +1,6 @@
 import BackgroundText from "../../components/BackgroundText";
 import ButtonYellow from "../../components/Buttons/ButtonYellow";
+import Appact from "../../components/CarrouselActivités";
 
 function ActivitiesSection() {
   return (
@@ -15,7 +16,9 @@ function ActivitiesSection() {
           strokeColor={"white"}
           textSize={20}
         />
+        <Appact/>
       </div>
+
       <div className="flex flex-col justify-center items-center text-lg">
         <ButtonYellow
           buttonFont="font-robotoCon"

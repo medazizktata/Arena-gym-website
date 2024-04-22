@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { getColor } from '../utils/getColor';
 
 const ActivityCard = ({ img, nom, icon }) => {
   const [hovered, setHovered] = useState(false);
@@ -13,10 +14,10 @@ const ActivityCard = ({ img, nom, icon }) => {
 
   return (
     <div
-      className="relative m-auto"
+      className="relative m-auto "
       onMouseEnter={handleHover}
       onMouseLeave={handleLeave}
-      style={{ width: '350px', height: '450px' }}
+      style={{ width: '75%', height: '450px', marginTop:'20px', marginLeft:'10px', marginRight:'10px' }}
     >
       <div
         className={` absolute inset-0 ${
@@ -26,7 +27,7 @@ const ActivityCard = ({ img, nom, icon }) => {
           backgroundImage: `linear-gradient(to bottom, transparent, black), url(${img})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          border: hovered ? '3px solid yellow' : '3px solid white',
+          border: hovered ? `3px solid ${getColor("yellowMain")}` : '3px solid white',
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50 rounded-md"></div>

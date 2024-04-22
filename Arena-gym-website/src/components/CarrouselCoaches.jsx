@@ -85,8 +85,8 @@ function Appcoaches() {
   };
 
   return (
-    <div className='carrousel'>
-      <div className='mt-20 relative z-70'>
+    <div className='carrousel z-10' style={{marginTop:'-300px'}}>
+      <div className='mt-20 relative'>
         <Slider ref={sliderRef} {...settings} >
           {data.map((d, index) => (
             <div key={index} className={getClassNames(index, slideIndex)}>

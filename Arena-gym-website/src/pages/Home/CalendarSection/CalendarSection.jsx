@@ -26,7 +26,6 @@ function CalendarSection() {
       </div>
 
       <div className="flex flex-col gap-20 justify-center items-center text-lg relative z-10">
-        <span>example</span>
         <Example />
 
         <ButtonYellow
