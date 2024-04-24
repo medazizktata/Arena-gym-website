@@ -89,45 +89,36 @@ function Appcoaches() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 250,
-    slidesToShow: 5,
+    speed: 300,
+    slidesToShow: 4,
     slidesToScroll: 1,
     beforeChange: (current, next) => setSlideIndex(next),
     centerMode: true,
     centerPadding: 0,
-    arrows: false,
+    arrows: true,
     variableWidth: true,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
-          dots: true
         }
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
-      }
+      },
     ]
   };
 
   return (
-    <div className="carrousel z-10" style={{ marginTop: "-350px" }}>
-      <div className="lg:mx-20 md relative">
+    <div className="carrousel z-10">
+      <div className="relative">
         <div className="">
           <Slider ref={sliderRef} {...settings}>
             {data.map((d, index) => (
@@ -164,20 +155,7 @@ function Appcoaches() {
             ))}
           </Slider>
         </div>
-        <button
-          className="arrowcoach text-xl px-3 py-1 rounded-full flex items-center justify-center w-12 bg-white absolute top-1/2 transform -translate-y-1 left-0 opacity-50 rounded-full"
-          style={{ left: "-50px" }}
-          onClick={previous}
-        >
-          <IoIosArrowBack />
-        </button>
-        <button
-          className="arrowcoach text-xl px-3 py-1 rounded-full flex items-center justify-center w-12 bg-white absolute top-1/2 transform -translate-y-1 opacity-50 rounded-full right-0"
-          style={{ right: "-50px" }}
-          onClick={next}
-        >
-          <IoIosArrowForward />
-        </button>
+        
       </div>
     </div>
   );
