@@ -13,7 +13,7 @@ function HeroSection() {
     <>
       <div className="">
         <div
-          className="w-full"
+          className="px-5"
           style={{
             background: `linear-gradient(to top, ${getColor(
               "yellowMain"
@@ -22,7 +22,7 @@ function HeroSection() {
         >
           <div className="relative mx-auto mx-[20px]">
             <div className="absolute my-40 inset-0 inline-flex flex-col items-center justify-center text-white z-10 mx-20 max-sm:mx-5 text-lg">
-              <div className="inline font-Gentona uppercase text-center mb-8 flex flex-col gap-2">
+              <div className="inline font-Gentona uppercase text-center mb-8 -mt-8 flex flex-col gap-2">
                 <h1 className="inline lg:text-9xl md:text-8xl max-sm:text-6xl sm:text-7xl font-black">
                   Arena Gym
                 </h1>
@@ -42,13 +42,7 @@ function HeroSection() {
                 >
                   En Savoir Plus
                 </ButtonYellow>
-                {/*  <ButtonYellow
-                  buttonFont="font-robotoCon"
-                  fontWeight="font-black"
-                  paddingX={10}
-                >
-                  Voir la galerie
-                </ButtonYellow> */}
+                
 
                 <Link to={"/galerie"}>
                   <ConsulterGalerieButton
@@ -114,7 +108,7 @@ function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center text-xl my-10">
+        <div className="flex flex-col justify-center items-center text-xl my-10 max-sm:text-sm">
           <Link to={"/tarifs"}>
             <ButtonYellow
               buttonFont="font-robotoCon"
