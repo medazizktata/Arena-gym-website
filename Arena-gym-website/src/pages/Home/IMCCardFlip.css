@@ -1,0 +1,28 @@
+.card-container {
+    perspective: 1000px;
+  }
+  
+  .card {
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+  }
+  
+  .front,
+  .back {
+    backface-visibility: hidden;
+
+  }
+  
+  .front {
+    z-index: 2;
+  }
+  
+  .back {
+    transform: rotateY(180deg); 
+
+  }
+  
+  .flipped {
+    transform: rotateY(180deg); 
+  }
+  
