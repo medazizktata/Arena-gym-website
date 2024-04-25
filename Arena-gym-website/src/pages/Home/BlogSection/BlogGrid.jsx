@@ -30,7 +30,7 @@ const BlogGrid = ({ blogs }) => {
         ))}
       </div>
       <div className="flex justify-center mt-8">
-        <ButtonYellow buttonType="button" buttonFont="font-bold" paddingX="px-6" fontWeight="font-bold">
+        <ButtonYellow buttonType="button" buttonFont={"font-robotoCon"} paddingX={6} fontWeight="font-bold">
           Consulter notre Blog
         </ButtonYellow>
       </div>
