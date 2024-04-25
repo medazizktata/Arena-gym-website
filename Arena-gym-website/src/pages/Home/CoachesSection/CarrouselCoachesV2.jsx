@@ -43,21 +43,20 @@ const data = [
 
 function CarrouselCoachesV2() {
   return (
-    <div className="">
+    <div className="swiper">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         loop={true}
         slidesPerView={"auto"}
-        height={"200px"}
-        spaceBetween={"-250px"}
+        spaceBetween={"-300px"}
+        width={"100%"}
         coverflowEffect={{
           rotate: 0,
           stretch: 1,
           depth: 100,
           modifier: 4,
         }}
-        width={"500px"}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -65,11 +64,10 @@ function CarrouselCoachesV2() {
         }}
         modules={[EffectCoverflow, Navigation]}
         className="swiper_container"
-        centerInsufficientSlides={1}
-        loopAddBlankSlides={1}
+
       >
         <div className="slider-controler">
-          <div className="swiper-button-prev slider-arrow">
+          <div className="swiper-button-prev slider-arrow transform lg:translate-y-[-200%] md:translate-y-[-320%] max-md:translate-y-[-400%] max-sm:hidden">
             <button className="">
               <IoIosArrowBack className="text-black" />
             </button>
@@ -79,23 +77,17 @@ function CarrouselCoachesV2() {
           <SwiperSlide key={index} >
             {/* <img src={item.img} alt={item.name} /> */}
             <div
-              className="absolute inset-0 rounded-full scale-90"
+              className="absolute inset-0 rounded-full scale-90 lg:w-[35rem] lg:h-[35rem] max-lg:w-[25rem] max-lg:h-[25rem] max-md:w-[20rem] max-md:h-[20rem] w-[20rem] h-[20rem] max-sm:w-[15rem] max-sm:h-[15rem] "
               style={{
                 backgroundImage: `url(${item.img})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
-                width: "34rem",
-                height: "34rem",
               }}
             >
               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80 rounded-full"></div>
               <div className="absolute inset-0 flex flex-col justify-center items-center">
                 <p
-                  className="text-white font-robotoCon text-center z-10 font-bold text-3xl"
-                  style={{
-                    position: "absolute",
-                    bottom: "-15%",
-                  }}
+                  className="absolute text-white font-robotoCon text-center z-10 font-bold lg:text-5xl max-lg:text-4xl  max-md:text-3xl max-sm:text-3xl max-lg:-bottom-20 lg:-bottom-28"
                 >
                   {item.name}
                 </p>
@@ -105,13 +97,14 @@ function CarrouselCoachesV2() {
         ))}
 
         <div className="slider-controler">
-          <div className="swiper-button-next slider-arrow">
+          <div className="swiper-button-next slider-arrow transform lg:translate-y-[-200%] md:translate-y-[-320%] max-md:translate-y-[-400%] max-sm:hidden">
             <button className="flex items-center justify-center">
               <IoIosArrowForward className="text-black" />
             </button>
           </div>
         </div>
       </Swiper>
+      
     </div>
   );
 }

@@ -69,7 +69,6 @@ html {
   height: 3rem;
   border-radius: 100%;
   position: absolute;
-  transform: translateY(-130%);
 
 }
 .slider-controler .swiper-button-next{

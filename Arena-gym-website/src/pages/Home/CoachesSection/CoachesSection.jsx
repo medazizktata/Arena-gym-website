@@ -7,8 +7,8 @@ import CarrouselCoachesV2 from "./CarrouselCoachesV2";
 function CoachesSection() {
   return (
     <>
-      <div className="my-28">
-        <h2 className="mb-20 font-urbanist mx-[10%] font-bold text-white text-4xl max-md:text-3xl lg:text-5xl relative z-10">
+      <div className="flex flex-col mt-28">
+        <h2 className="mb-20 font-urbanist mx-[10%] font-bold text-white max-sm:text-2xl max-md:text-3xl md:text-4xl lg:text-5xl relative z-10">
         Consultez nos entraineurs professionnels
         </h2>
         <div className="relative">
@@ -20,11 +20,11 @@ function CoachesSection() {
             textSize={20}
           />
           
-          <div className="-mt-[32%]">
+          <div className="relative sm:-mt-[38%] md:sm:-mt-[38%] lg:-mt-[36%] max-sm:-mt-[50%]">
           <CarrouselCoachesV2/>
           </div>
         </div>
-        <div className="relative z-40 -mt-28 flex flex-col justify-center items-center text-lg max-sm:mt-5">
+        <div className="relative z-40 flex justify-center text-lg lg:-mt-[120px] md:-mt-[300px] sm:-mt-[350px] max-sm:-mt-[250px] max-sm:text-sm">
           <Link to={"/coaches"}>
             <ButtonYellow
               buttonFont="font-robotoCon"
