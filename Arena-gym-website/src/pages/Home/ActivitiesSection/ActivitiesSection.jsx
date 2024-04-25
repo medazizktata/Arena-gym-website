@@ -7,7 +7,7 @@ function ActivitiesSection() {
   return (
     <>
       <div className="my-28">
-        <h2 className="mb-10 font-urbanist mx-[10%] font-bold text-white text-5xl max-md:text-3xl lg:text-6xl relative z-10">
+        <h2 className="mb-10 font-urbanist ml-[10%] font-bold text-white text-5xl max-md:text-3xl lg:text-6xl relative z-10">
           Découvrez nos activités
         </h2>
         <div className="relative">
@@ -18,11 +18,11 @@ function ActivitiesSection() {
             strokeColor={"white"}
             textSize={20}
           />
-          <div className="-mt-[20%]">
+          <div className="-mt-[20%] ">
             <Appact />
           </div>
         </div>
-        <div className="my-16 flex flex-col justify-center items-center text-lg">
+        <div className="my-16 max-sm:my-10 flex flex-col justify-center items-center text-lg max-sm:text-sm">
           <Link to={"/activites"}>
             <ButtonYellow
               buttonFont="font-robotoCon"

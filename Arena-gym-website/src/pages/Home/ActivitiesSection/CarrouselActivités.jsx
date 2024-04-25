@@ -40,17 +40,33 @@ function Appact() {
     ),
     prevArrow: (
       <SamplePrevArrow
-        className="text-xl px-3 py-1 flex items-center justify-center w-12 bg-white absolute top-1/2 transform -translate-y-1/2 left-5 opacity-30"
+        className="text-xl px-3 py-1 flex items-center justify-center w-12 bg-white absolute top-1/2 transform -translate-y-1/2 opacity-30 left-5"
         onClick={previous}
       />
     ),
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
-    <div className="w-[70%] mx-auto">
-      <div className="relative">
+    <div className="w-[80%] mx-auto">
+      <div className="relative ">
         <button
-          className="absolute sm:-left-16 max-sm:-left-10 top-[45%] text-xl px-3 py-1 flex items-center justify-center w-10 h-10 max-sm:w-5 max-sm:h-5 max-sm:px-1 bg-white opacity-30 hover:opacity-60 transition duration 500 ease-in-out "
+          className="absolute sm:-left-16 max-sm:-left-10 top-[45%] text-xl px-3 py-1 flex items-center justify-center md:w-10 md:h-10 max-md:hidden max-sm:px-1 bg-white opacity-30 hover:opacity-60 transition duration 500 ease-in-out "
           onClick={previous}
         >
           <IoIosArrowBack />
@@ -85,7 +101,8 @@ function Appact() {
                     <div className="absolute bottom-5 z-10">
                       <ButtonWhite
                         buttonFont="font-robotoCon"
-                        fontWeight="w-full text-sm md:text-base lg:text-lg px-5 lg:px-20 md:px-12 font-black"
+                        fontWeight="w-full text-sm font-black md:text-base lg:text-lg lg:px-20 md:px-20 sm:px-16 max-sm:px-30"
+                        paddingX={20}
                       >
                         Voir classe
                       </ButtonWhite>
@@ -97,7 +114,7 @@ function Appact() {
           ))}
         </Slider>
         <button
-          className="absolute sm:-right-16 max-sm:-right-10 top-[45%] text-xl px-3 py-1 flex items-center justify-center w-10 h-10 max-sm:w-5 max-sm:h-5 max-sm:px-1 bg-white opacity-30 hover:opacity-60 transition duration 500 ease-in-out"
+          className="absolute sm:-right-16 max-sm:-right-10 top-[45%] text-xl px-3 py-1 flex items-center justify-center md:w-10 md:h-10 max-md:hidden max-sm:px-1 bg-white opacity-30 hover:opacity-60 transition duration 500 ease-in-out"
           onClick={next}
         >
           <IoIosArrowForward />
