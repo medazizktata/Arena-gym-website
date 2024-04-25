@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function CalendarSection() {
   return (
     <>
-      <div className="my-10 md:mx-20  px-14 relative flex flex-col items-center ">
+      <div className="my-10 md:mx-20 px-14 relative flex flex-col items-center ">
         <div className="absolute z-1 w-full top-10 opacity-50">
           <BackgroundText
             className=""
@@ -26,12 +26,15 @@ function CalendarSection() {
         </h3>
       </div>
 
-      <div className="flex flex-col gap-20 justify-center items-center text-lg relative z-10">
-        <Example />
+      <div className="mt-10 flex flex-col gap-20 justify-center items-center text-lg relative z-10">
+        <div className="max-md:scale-90 mx-5">
+          <Example />
+        </div>
         <Link to={"/tarifs"}>
+
           <ButtonYellow
             buttonFont="font-robotoCon"
-            fontWeight="font-black hover:scale-105"
+            fontWeight="-mt-40 font-black hover:scale-105"
             paddingX={10}
           >
             Voir nos Plans
