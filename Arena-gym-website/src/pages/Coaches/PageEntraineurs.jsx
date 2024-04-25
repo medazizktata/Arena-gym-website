@@ -7,8 +7,8 @@ export function PageEntraineurs() {
   return (
     <>
       <HeadEntraineurs />
-      <div className="flex justify-center items-center transform scale-150 my-10">
-        <SearchBox />
+      <div className="flex justify-center items-center -mt-10 mb-10">
+        <SearchBox width={600} />
       </div>
       <ContentEntraineurs />
     </>
