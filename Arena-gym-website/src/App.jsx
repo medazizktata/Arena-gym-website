@@ -12,11 +12,15 @@ import BelowFooter from "./components/BelowFooter.jsx";
 import GalerieV2 from "./pages/Gallery/Galeriev2.jsx";
 import Planning from "./pages/Planning/Planning.jsx";
 import Footer from "./components/Footer.jsx";
-import BlogPostContainer from "./pages/Blog/Blogs.jsx";
 import ChoisirSalle from "./pages/ChoisirSalle/ChoisirSalle.jsx";
-import Activite from "./pages/activités/activité1.jsx";
-import ActiviteInd from "./pages/activités/ActiviteInd.jsx";
+import Activites from "./pages/Activities/Activites.jsx";
+import ActiviteInd from "./pages/Activities/ActiviteInd.jsx";
 import { PageEntraineurs } from "./pages/Coaches/PageEntraineurs.jsx";
+import BlogPostContainer from "./pages/Blog/Blogs.jsx";
+import BlogPage from "./pages/Blog/SingleBlog.jsx";
+import Coach from "./pages/Single Coach/SingleCoachDescription.jsx";
+import SingleCoachDescription from "./pages/Single Coach/SingleCoachDescription.jsx";
+import { PageApplication } from "./pages/Application/PageApplication.jsx";
 
 function App() {
   return (
@@ -58,12 +62,22 @@ function App() {
             />
             <Route
               path="/activites"
-              element={<Activite />}
+              element={<Activites />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/activiteIndiv"
+              element={<ActiviteInd />}
+              errorElement={<ErrorPage />}
+            />
+            <Route
+              path="/coachIndiv"
+              element={<SingleCoachDescription />}
               errorElement={<ErrorPage />}
             />
             <Route
               path="/coaches"
-              element={<PageEntraineurs />}
+              element={<PageEntraineurs/>}
               errorElement={<ErrorPage />}
             />
             <Route
@@ -86,16 +100,22 @@ function App() {
               element={<Home />}
               errorElement={<ErrorPage />}
             />
+            
             <Route
               path="/about"
               element={<About />}
               errorElement={<ErrorPage />}
             />
+            <Route
+              path="/applicationPadel"
+              element={<PageApplication />}
+              errorElement={<ErrorPage />}
+            />
           </Routes>
         </div>
         <div className="mt-60 w-full bottom-0 mx-auto">
-          {/* <Footer />
-          <BelowFooter /> */}
+          <Footer />
+          <BelowFooter />
         </div>
       </div>
     </>
