@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ImageHover from "../ImageHover";
 import ButtonYellow from "../Buttons/ButtonYellow";
 import HamburgerIcon from "./HamburgerCrossIcon/HamburgerCrossIcon";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +10,8 @@ function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const location = useLocation();
 
   const [navbarBackground, setNavbarBackground] = useState(false);
 
@@ -54,79 +56,84 @@ function Navbar() {
 
           {/* Desktop Menu Links */}
           <div className="hidden lg:flex lg:space-x-3 items-center text-center font-urbanist font-semibold">
-            <Link
-              to="/home"
-              className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
-            >
+            <NavLink to="/home" active={location.pathname === "/home"}>
               <span className="block">Acceuil</span>
-              <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
-              <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-            </Link>
-            <Link
+              {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
+              <span className="absolute inset-0 hover:bg-white opacity-15 transition duration-300 "></span>
+            </NavLink>
+            <NavLink
               to="/activites"
+              active={location.pathname === "/activites"}
               className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
             >
               <span className="block">Activités</span>
-              <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+              {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
               <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/coaches"
+              active={location.pathname === "/coaches"}
               className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
             >
               <span className="block">Coaches</span>
-              <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+              {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
               <span className="absolute inset-0 hover:bg-white opacity-15 transition duration-300 "></span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/blog"
+              active={location.pathname === "/blog"}
               className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
             >
               <span className="block">Blog</span>
-              <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+              {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
               <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/tarifs"
+              active={location.pathname === "/tarifs"}
               className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
             >
               <span className="block">Tarifs</span>
-              <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+              {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
               <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/planning"
+              active={location.pathname === "/planning"}
               className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
             >
               <span className="block">Planning</span>
-              <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+              {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
               <span className="absolute inset-0 hover:bg-white opacity-15 transition duration-300 "></span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/galerie"
+              active={location.pathname === "/galerie"}
               className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
             >
               <span className="block">Galerie</span>
-              <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+              {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
               <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/contact"
+              active={location.pathname === "/contact"}
               className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
             >
               <span className="block">Contact</span>
-              <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+              {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
               <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/about"
+              active={location.pathname === "/about"}
               className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
             >
               <span className="block">A Propos</span>
-              <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+              {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
               <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-            </Link>
-            <Link to="/tarifs">
+            </NavLink>
+            <NavLink to="/tarifs" active={location.pathname === "/tarifs"}>
               <ButtonYellow
                 buttonFont="font-robotoCon"
                 fontWeight="font-black"
@@ -134,7 +141,7 @@ function Navbar() {
               >
                 Join Us
               </ButtonYellow>
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>
@@ -145,90 +152,118 @@ function Navbar() {
         }`}
       >
         <div className="flex flex-col gap-5 text-2xl items-start pt-5 w-60 lg:w-64 space-x-3 font-urbanist font-semibold">
-          <Link
+          <NavLink
             to="/home"
+            active={location.pathname === "/home"}
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
             <span className="block hidden">Acceuil</span>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
             <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/home"
+            active={location.pathname === "/home"}
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
             <span className="block">Acceuil</span>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
             <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-          </Link>
-          <Link
-            to="/activities"
+          </NavLink>
+          <NavLink
+            to="/activites"
+            active={location.pathname === "/activites"}
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
             <span className="block">Activités</span>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
             <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/coaches"
+            active={location.pathname === "/coaches"}
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
             <span className="block">Coaches</span>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
             <span className="absolute inset-0 hover:bg-white opacity-15 transition duration-300 "></span>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/blog"
+            active={location.pathname === "/blog"}
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
             <span className="block">Blog</span>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
             <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/tarifs"
+            active={location.pathname === "/tarifs"}
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
             <span className="block">Tarifs</span>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
             <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/planning"
+            active={location.pathname === "/planning"}
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
             <span className="block">Planning</span>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
             <span className="absolute inset-0 hover:bg-white opacity-15 transition duration-300 "></span>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/galerie"
+            active={location.pathname === "/galerie"}
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
             <span className="block">Galerie</span>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
             <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/contact"
+            active={location.pathname === "/contact"}
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
             <span className="block">Contact</span>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
             <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/about"
+            active={location.pathname === "/about"}
             className="text-white p-2 group relative hover:text-yellowMain transition duration-300"
           >
             <span className="block">A Propos</span>
-            <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span>
+            {/* <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-yellowMain"></span> */}
             <span className="absolute inset-0  hover:bg-white opacity-15 transition duration-300 "></span>
-          </Link>
+          </NavLink>
         </div>
       </div>
     </nav>
   );
 }
+const NavLink = ({ to, active, children }) => {
+  return (
+    <Link
+      to={to}
+      className={`text-white p-2 group relative hover:text-yellowMain transition duration-300 ${
+        active ? "text-yellowMain" : ""
+      }`}
+    >
+      <span className="block">{children}</span>
+      <span
+        className={`block max-w-0 transition-all duration-300 h-0.5 bg-yellowMain ${
+          active ? "max-w-full " : "group-hover:max-w-full"
+        }`}
+      ></span>
+      <span className="absolute inset-0 hover:bg-white opacity-15 transition duration-300 "></span>
+    </Link>
+  );
+};
 
 export default Navbar;
