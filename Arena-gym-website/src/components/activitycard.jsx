@@ -17,7 +17,7 @@ const ActivityCard = ({ img, nom, icon }) => {
       className="relative m-auto "
       onMouseEnter={handleHover}
       onMouseLeave={handleLeave}
-      style={{ width: '75%', height: '450px', marginTop:'20px', marginLeft:'10px', marginRight:'10px' }}
+      style={{ width: '85%', height: '450px', marginTop:'20px', marginLeft:'10px', marginRight:'10px' }}
     >
       <div
         className={` absolute inset-0 ${
