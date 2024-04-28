@@ -27,7 +27,7 @@ const SearchBox = ({ width = 400, filterToggle = 0 }) => //filterToggle = 0 => n
         placeholder="Search..."
         value={searchInput}
         onChange={handleChange}
-        className={`w-[${width}px] text-white text-xl h-12 outline-none px-12 py-3 pl-10 bg-transparent border-b-2 border-gray-300"`} // Adjusted height to h-12
+        className={`w-[${width}px] text-white text-xl h-12 outline-none px-12 py-3 pl-10 bg-transparent border-b-2 border-gray-300"`}
       />
       <div className={`relative right-5 ${filterHide}`}>
         <LuFilter className="text-white text-2xl" />
