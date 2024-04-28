@@ -45,7 +45,7 @@ const DynamicSVGComponent = ({ svgPath, width, height, color, hoverColor }) => {
               fill: ${hoverColor}; 
             }
           `}</style>
-          <div className="dynamic-svg-container" dangerouslySetInnerHTML={{ __html: svgContent }} />
+          <div className="dynamic-svg-container" dangerouslySetInnerHTML={{ __html: svgContent }} /> 
         </div>
       )}
     </div>
