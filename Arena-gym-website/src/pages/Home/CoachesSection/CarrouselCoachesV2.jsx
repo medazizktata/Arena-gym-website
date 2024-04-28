@@ -38,6 +38,21 @@ const data = [
   {
     name: "Nader",
     img: "images/9522175b-7b4f-4ca6-a79c-c611bc097173_r7aqxd.png",
+  },{
+    name: "Salah",
+    img: "images/boxe-anglaise-debutant_dojo.jpg",
+  },
+  {
+    name: "Sami",
+    img: "images/1000_F_575226840_HVm83lSEIqArrnLNrhXxzebjeRJ14AtE.jpg",
+  },
+  {
+    name: "Wassim",
+    img: "images/1000_F_524378456_7iH4roEgy8t8351zKypjRumlIbRfwhIO.jpg",
+  },
+  {
+    name: "Nader",
+    img: "images/9522175b-7b4f-4ca6-a79c-c611bc097173_r7aqxd.png",
   },
 ];
 
