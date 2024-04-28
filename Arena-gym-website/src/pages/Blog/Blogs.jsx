@@ -9,8 +9,8 @@ import BlogPage from "./SingleBlog.jsx";
 function BlogPostContainer() {
   return (
     
-    <div className=" flex flex-col justify-center mt-40 mb-20">
-      <div className="flex flex-col  mx-0 mb-10 md:flex-row md:mx-20">
+    <div className=" flex flex-col justify-center mt-20 mb-20">
+      <div className="flex flex-col mx-0 mb-10 md:flex-row md:mx-20">
         
        <BlogPost
           title="Catégorie: Titre-Bolg"
