@@ -74,7 +74,7 @@ export default function Example() {
                     type="button"
                     onClick={() => setSelectedDay(day)}
                     className={classNames(
-                      isEqual(day, selectedDay) && "text-white",
+                      isEqual(day, selectedDay) && "text-black",
                       !isEqual(day, selectedDay) &&
                         isToday(day) &&
                         "text-black font-black",
@@ -89,7 +89,7 @@ export default function Example() {
                       isEqual(day, selectedDay) && isToday(day) && "bg-yellowMain border border-blackBG text-black",
                       isEqual(day, selectedDay) &&
                         !isToday(day) &&
-                        "bg-gray-900",
+                        "bg-gray-400",
                       !isEqual(day, selectedDay) && "hover:bg-gray-200",
                       (isEqual(day, selectedDay) || isToday(day)) &&
                         "font-semibold",

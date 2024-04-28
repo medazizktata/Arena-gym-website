@@ -17,7 +17,7 @@ function HeroSection() {
           style={{
             background: `linear-gradient(to top, ${getColor(
               "yellowMain"
-            )} 0%, ${getColor("blackBG")} 90%, rgba(0, 0, 0, 0) 100%)`,
+            )} 0%, ${getColor("blackBG")} 80%, rgba(0, 0, 0, 0) 100%)`,
           }}
         >
           <div className="relative mx-auto mx-[20px]">
@@ -34,7 +34,7 @@ function HeroSection() {
                 Arena Gym est une salle de sport couvrant un espace de 2500m²
                 unique avec sa répartition Indoor et Out-door.
               </span>
-              <div className="inline flex flex-row gap-10 md:text-2xl sm:text-xl max-sm:gap-1 max-sm:flex-col-reverse max-sm:scale-90 ">
+              <div className="inline flex flex-row gap-10 md:text-xl sm:text-xl max-sm:gap-1 max-sm:flex-col-reverse max-sm:scale-90 ">
                 <ButtonYellow
                   buttonFont="font-robotoCon"
                   fontWeight="font-black scale-90"
@@ -42,15 +42,16 @@ function HeroSection() {
                 >
                   En Savoir Plus
                 </ButtonYellow>
-                
+                <div className="">
+                  <Link to={"/galerie"}>
+                    <ConsulterGalerieButton
+                      className={
+                        "sm:text-2xl hover:text-yellowMain transition duration-500 cursor-pointer"
+                      }
 
-                <Link to={"/galerie"}>
-                  <ConsulterGalerieButton
-                    className={
-                      "sm:text-xl hover:text-yellowMain transition duration-500 cursor-pointer"
-                    }
-                  />
-                </Link>
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="pb-10 lg:pb-20 md:pb-16">
