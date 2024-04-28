@@ -9,9 +9,9 @@ const ConsulterGalerieButton = ({className}) => {
         <div className={`flex items-center gap-3 h-16 text-white ${className}`}>
 
            {/*  <FontAwesomeIcon icon={faImages} className="galerie-icon" /> */}
-            <IoPlayCircleOutline className="" icon={faImages}/>
+            <IoPlayCircleOutline className="" icon={faImages} size={40}/>
 
-            <button className="galerie-button font-robotoCon"> Consulter notre galerie</button>
+            <button className="galerie-button font-robotoCon" > Consulter notre galerie</button>
         </div>
     );
 };
