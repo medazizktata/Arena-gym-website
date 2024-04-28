@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BlogPage from "../pages/Bolgs/SingleBlog.jsx";
+import BlogPage from "../pages/Blog/SingleBlog.jsx";
 
 function BlogPost({ title, img, content }) {
   return (
