@@ -20,11 +20,11 @@ function CoachesSection() {
             textSize={20}
           />
           
-          <div className="relative sm:-mt-[38%] md:sm:-mt-[38%] lg:-mt-[36%] max-sm:-mt-[50%]">
+          <div className="relative sm:-mt-[38%] md:sm:-mt-[38%] lg:-mt-[32%] max-sm:-mt-[50%]">
           <CarrouselCoachesV2/>
           </div>
         </div>
-        <div className="relative z-40 flex justify-center text-lg lg:-mt-[120px] md:-mt-[300px] sm:-mt-[350px] max-sm:-mt-[250px] max-sm:text-sm">
+        <div className="relative z-0 flex justify-center text-lg lg:-mt-[120px] md:-mt-[300px] sm:-mt-[350px] max-sm:-mt-[250px] max-sm:text-sm">
           <Link to={"/coaches"}>
             <ButtonYellow
               buttonFont="font-robotoCon"
