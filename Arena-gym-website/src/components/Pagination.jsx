@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 function Pagination({ currentPage, totalPages, onPageChange }) {
   const [page, setPage] = useState(currentPage);
@@ -12,9 +13,9 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
   const handleButtonHover = (pageNumber) => {
     setHoveredButton(pageNumber);
   };
-    const pageNumbers = [];
 
   const renderPageNumbers = () => {
+    const pageNumbers = [];
     for (let i = 1; i <= totalPages; i++) {
       pageNumbers.push(
         <button
@@ -22,15 +23,13 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
           className={`px-4 py-2 mx-1 border-white border-2 ${
             page === i
               ? "bg-White text-white border-yellowMain"
-              : "bg-gray-300 text-gray-600 hover:bg-blue-400 hover:text-white"
+              : "bg-blackBG text-white hover:bg-yellowMain hover:text-black transition duration-300 ease-in-out"
           }`}
           onClick={() => handlePageChange(i)}
           onMouseEnter={() => handleButtonHover(i)}
-          onMouseLeave={() =>
-            setHoveredButton(hoveredButton === i ? null : hoveredButton)
-          }
+          onMouseLeave={() => setHoveredButton(null)}
           style={{
-            transform: hoveredButton === i ? "scale(1.15)" : "scale(1)",
+            transform: hoveredButton === i ? "scale(1.1)" : "scale(1)",
           }}
         >
           {i}
@@ -39,57 +38,32 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
     }
     return pageNumbers;
   };
-  const L = pageNumbers;
+
+  const smallScreen = window.innerWidth <= 640;
 
   return (
-    <div className="flex justify-center items-center">
-      {page !== 1 && (
-        <button
-          className={`px-4 py-2 mr-2 border-white border-2 bg-White text-white hover:bg-yellowMain hover:text-black hover:border-black`}
-          onClick={() => handlePageChange(page - 1)}
-        >
-          Previous
-        </button>
-      )}
-
-      <div className="flex">
-        {L.map((pageNumber) => (
-          <button
-            key={pageNumber}
-            className={`px-4 py-2 mx-1 border-white border-2 ${
-              page === pageNumber
-                ? "bg-yellowMain text-Black border-yellowMain"
-                : "bg-blackBG text-white hover:bg-yellowMain hover:text-black"
-            }`}
-            onClick={() => handlePageChange(pageNumber)}
-            onMouseEnter={() => handleButtonHover(pageNumber)}
-            onMouseLeave={() =>
-              setHoveredButton(
-                hoveredButton === pageNumber ? null : hoveredButton
-              )
-            }
-            style={{
-              transform:
-                hoveredButton === pageNumber ? "scale(1.15) " : "scale(1)",
-              border:
-                page === pageNumber && hoveredButton === pageNumber
-                  ? "2px solid var(--color-yellowDarkShadow)"
-                  : "",
-            }}
-          >
-            {pageNumber}
-          </button>
-        ))}
+    <div className="flex flex-col gap-5 justify-center items-center sm:flex-row">
+      <button
+        className={`px-4 py-2 border-white border-2 bg-White text-white transition duration-300 ease-in-out ${
+          page === 1 ? "opacity-50 cursor-not-allowed" : "hover:bg-yellowMain hover:text-black hover:border-black"
+        }`}
+        onClick={() => handlePageChange(page - 1)}
+        disabled={page === 1}
+      >
+        {smallScreen ? <FiChevronLeft /> : "Previous"}
+      </button>
+      <div className="flex justify-center items-center sm:mt-0">
         {renderPageNumbers()}
       </div>
-      {page !== L.length && (
-        <button
-          className={`px-4 py-2 ml-2 border-white border-2 bg-White text-white hover:bg-yellowMain hover:text-black hover:border-black`}
-          onClick={() => handlePageChange(page + 1)}
-        >
-          Next
-        </button>
-      )}
+      <button
+        className={`px-4 py-2 border-white border-2 bg-White text-white transition duration-300 ease-in-out ${
+          page === totalPages ? "opacity-50 cursor-not-allowed" : "hover:bg-yellowMain hover:text-black hover:border-black"
+        }`}
+        onClick={() => handlePageChange(page + 1)}
+        disabled={page === totalPages}
+      >
+        {smallScreen ? <FiChevronRight /> : "Next"}
+      </button>
     </div>
   );
 }
