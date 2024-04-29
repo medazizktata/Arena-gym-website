@@ -22,16 +22,20 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <HeroSection />
+      <section id="home">
+        <HeroSection />
+      </section>
       <ActivitiesSection />
       <CoachesSection />
-      
-      <IMCSection/>
-      <CalendarSection/>
-      <BlogHome/>
+
+      <IMCSection />
+      <CalendarSection />
+      <BlogHome />
       <AppSection />
       <MapSection />
-      <ContactSection/>
+      <section id="home#contact">
+        <ContactSection />
+      </section>
       <SponsorsSection />
     </>
   );
