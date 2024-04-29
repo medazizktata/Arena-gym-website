@@ -94,7 +94,7 @@ function Activites() {
         </div>
       </div>
       </div>
-      <div className="my-10">
+      <div className="max-sm:-my-40 max-sm:pb-10 sm:my-20">
         <Pagination
           currentPage={currentPage}
           totalPages={Math.ceil(activities.length / activitiesPerPage)}

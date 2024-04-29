@@ -20,7 +20,7 @@ function PageIntroduction({
 
   return (
     <>
-      <div className="my-20 relative overflow-y-hidden">
+      <div className="mb-20 relative overflow-y-hidden">
         <div className="flex flex-col relative z-10">
           <div className="transform translate-y-10">
             <div
