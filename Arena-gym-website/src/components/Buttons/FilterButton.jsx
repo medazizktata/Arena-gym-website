@@ -1,33 +1,18 @@
-import React, { useState } from "react";
+// FilterButton.jsx
+import React from "react";
 
-function FilterButton({ children }) {
-  const [isRemoving, setIsRemoving] = useState(false);
-
-  const handleRemove = () => {
-    setIsRemoving(true);
-
-    setTimeout(() => {
-      const parentElement = document.getElementById("filterButtonParent");
-
-      if (parentElement) {
-        parentElement.removeChild(parentElement.firstChild);
-      }
-    }, 100);
-  };
-
+function FilterButton({ children, onClick }) {
   return (
-    <div id="filterButtonParent">
+    <div className="filter-button-container transition-opacity transition-transform duration-300 ease-in-out">
       <button
-        className={`relative flex items-center py-1 px-2 h-10 bg-blackBg border border-white transition duration-300 ease-in-out hover:border-yellowMain shadow-cardSmallWhite hover:shadow-cardYellowMain ${
-          isRemoving ? "opacity-0 scale-0" : ""
-        }`}
+        className="filter-button relative flex items-center py-1 px-2 h-10 bg-blackBg border border-white hover:border-yellowMain shadow-cardSmallWhite hover:shadow-cardYellowMain"
+        onClick={onClick}
       >
         <span className="text-white font-robotoCon mr-2">{children}</span>
         <svg
-          className="h-6 w-6 fill-current text-white transition duration-300 ease-in-out hover:text-yellowMain cursor-pointer"
+          className="filter-icon h-6 w-6 fill-current text-white cursor-pointer"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
-          onClick={handleRemove}
         >
           <path
             fillRule="evenodd"
