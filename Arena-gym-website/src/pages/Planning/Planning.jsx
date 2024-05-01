@@ -25,7 +25,7 @@ const Planning = () => {
         </div>
         {/*     <FilterDropDown>Cours</FilterDropDown>
          */}{" "}
-        <FilterDropDownUpgraded>Coaches</FilterDropDownUpgraded>
+        <FilterDropDownUpgraded>Cours</FilterDropDownUpgraded>
      
       </div>
     </>
