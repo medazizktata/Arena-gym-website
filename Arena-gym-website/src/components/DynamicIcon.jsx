@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const DynamicSVGComponent = ({ svgPath, width, height, color, hoverColor }) => {
+const DynamicSVGComponent = ({ svgPath, width, height, color, hoverColor, onClick }) => {
   const [svgContent, setSvgContent] = useState(null);
 
   useEffect(() => {
@@ -18,9 +18,8 @@ const DynamicSVGComponent = ({ svgPath, width, height, color, hoverColor }) => {
   }, [svgPath]);
 
   return (
-    <div style={{ width, height }}>
+    <div style={{ width, height }} onClick={onClick}>
       {svgContent && (
-        // Apply styles to the SVG content using CSS
         <div style={{ width: '100%', height: '100%' }}>
           <style>{`
             .dynamic-svg-container svg {
