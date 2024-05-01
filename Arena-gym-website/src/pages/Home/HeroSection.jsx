@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import BackgroundText from "../../components/BackgroundText";
 import BigCaroussel from "../../components/BigCaroussel";
@@ -7,6 +7,7 @@ import { getColor } from "../../utils/getColor";
 import ConsulterGalerieButton from "../../components/ConsulterGallerie";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import DynamicSVGComponent from "../../components/DynamicIcon";
 
 function HeroSection() {
   return (
@@ -48,7 +49,6 @@ function HeroSection() {
                       className={
                         "sm:text-2xl hover:text-yellowMain transition duration-500 cursor-pointer"
                       }
-
                     />
                   </Link>
                 </div>

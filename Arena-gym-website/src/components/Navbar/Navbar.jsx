@@ -54,7 +54,7 @@ function Navbar() {
             </Link>
           </div>
           {/* Hamburger Menu */}
-          <div className="lg:hidden">
+          <div className="lg:hidden z-60">
             <HamburgerIcon isOpen={isMenuOpen} toggleMenu={toggleMenu} />
           </div>
 

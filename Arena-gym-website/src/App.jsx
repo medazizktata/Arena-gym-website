@@ -113,7 +113,7 @@ function App() {
             />
           </Routes>
         </div>
-        <div className="mt-60 w-full bottom-0 mx-auto">
+        <div className="mt-20 w-full bottom-0 mx-auto">
           <Footer />
           <BelowFooter />
         </div>
